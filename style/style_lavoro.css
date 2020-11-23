@@ -90,3 +90,27 @@ a:visited{
 #imgValidCSS{
     float:right;
 }
+#attivita{
+    width:92%;
+    margin:auto;
+}
+#attivita dt{
+    background-color: #0610C9;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+#attivita dd{
+    border: 1px solid black;
+    border-top: none;
+    padding: 0.5em;
+    min-height: 12em;
+}
+#attivita dd img{
+    float: right;
+    width: 20%;
+    margin-right: 1em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
