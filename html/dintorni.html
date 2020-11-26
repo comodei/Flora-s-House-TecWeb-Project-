@@ -9,34 +9,35 @@
 <!--titolo del sito che compare nella lista dei risultati prodotti a seguito di una query-->
 <meta name="description" content="Sito realizzato per la descrizione di casa disponibile per essere affittata durante il periodo estivo nei Colli Euganei"/>
 <!-- per produrre la descrizione che compare sotto al titolo della pagina nella lista dei risultati prodotti a seguito di una query-->
+<meta name="viewport" content="width=device-width" />
 <meta name="keywords" content="Casa,Colli Euganei,Teolo"/>
 <meta name="author" content="Daniele Spigolon Cesare Omodei Valton Tahiraj"/>
 <meta name="language" content="Italian it"/>
 
 <link rel="stylesheet" type="text/css" href="../style/style_lavoro.css" media="screen" /></head>
 <body>
-<div id="header">
+<div id="header" role="banner">
     <ul>
-    <li><a href="#menu" class="aiutiNascosti">Vai al menù</a></li>
-    <li><a href="#main" class="aiutiNascosti">Vai al contenuto principale</a></li>
+    <li><a href="#menu" class="aiutiNascosti" title="Vai al menu" aria-label="Vai al menu">Vai al menù>Vai al menù</a></li>
+    <li><a href="#main" class="aiutiNascosti" title="Vai al contenuto" aria-label="Vai al cotenuto">Vai al contenuto principale</a></li>
     </ul>
     <img id="logo" src="../images/logo.png" alt="Logo che riporta il nome della casa Flora's House con sopra una spirale"/>
     <h1>Flora's House</h1>
     <h3>Un'autentico <span xml:lang="en">relax</span> nei meravigliosi Colli Euganei</h3>
 </div>
-<div id="breadcrumb">
+<div id="breadcrumb" title="Breadcrumb" aria-label="Breadcrumb">
     <p>Ti trovi in: <span xml:lang="en">Home</span> >> Dintorni</p>
 </div>
-<div id="menu">
+<div id="menu" role="navigation">
     <ul>
         <li xml:lang="en"><a href="base.html">Home</a></li>
-        <li><a href="galleria.html">Galleria</a></li>
-        <li><a href="prenotazioni.html">Prenotazioni</a></li>
-        <li class="currentLink">Dintorni</li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="galleria.html" title="Vai alla pagina galleria" aria-label="Vai alla pagina galleria">Galleria</a></li>
+        <li><a href="prenotazioni.html" title="Vai alla pagina prenotazioni" aria-label="Vai alla pagina prenotazioni">Prenotazioni</a></li>
+        <li class="currentLink" title="Vai alla pagina dintorni" aria-label="Vai alla pagina dintorni">Dintorni</li>
+        <li><a href="contatti.html" title="Vai alla pagina contatti" aria-label="Vai alla pagina contatti">Contatti</a></li>
     </ul>
 </div>
-<div id="main">
+<div id="main" role="main">
     <h2>Attività presenti nei dintorni</h2>
     <dl id="attivita">
         <dt xml:lang="en">Mountain bike</dt>
@@ -48,11 +49,11 @@
                     garantendo divertimento sia ai principianti che ai maggiori esperti di questo sport.
                     In seguito presentiamo un <span xml:lang="en">link</span>ad un sito che riporta tutti i percorsi più conosciuti e frequentati.
                 </p>
-                <a href="https://www.ombremtb.it/category/itinerari-colli-euganei/percorsi-consigliati/">www.ombremtb.it</a>
+                <a href="https://www.ombremtb.it/category/itinerari-colli-euganei/percorsi-consigliati/" title="Vai alla pagina per maggiori informazioni" aria-label="Vai alla pagina per maggiori informazioni">www.ombremtb.it</a>
             </dd>
     </dl>
 </div>
-<div id="footer">
+<div id="footer" title="footer" aria-label="footer">
     <img id="imgValidCSS" src="../images/vcss-blue.gif" alt="validità css"/>
     <img id="imgValidCode" src="../images/valid-xhtml10.png" alt="logo validità xhtml"/>
     <p>Autori del sito: Cesare Omodei, Daniele Spigolon, Valton Tahiraj</p>

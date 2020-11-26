@@ -9,34 +9,35 @@
 <!--titolo del sito che compare nella lista dei risultati prodotti a seguito di una query-->
 <meta name="description" content="Sito realizzato per la descrizione di casa disponibile per essere affittata durante il periodo estivo nei Colli Euganei"/>
 <!-- per produrre la descrizione che compare sotto al titolo della pagina nella lista dei risultati prodotti a seguito di una query-->
+<meta name="viewport" content="width=device-width" />
 <meta name="keywords" content="Casa,Colli Euganei,Teolo"/>
 <meta name="author" content="Daniele Spigolon Cesare Omodei Valton Tahiraj"/>
 <meta name="language" content="Italian it"/>
 
 <link rel="stylesheet" type="text/css" href="../style/style_lavoro.css" media="screen" /></head>
 <body>
-<div id="header">
+<div id="header" role="banner">
     <ul>
-    <li><a href="#menu" class="aiutiNascosti">Vai al menù</a></li>
-    <li><a href="#main" class="aiutiNascosti">Vai al contenuto principale</a></li>
+    <li><a href="#menu" class="aiutiNascosti" title="Vai al menu" aria-label="Vai al menu">Vai al menù</a></li>
+    <li><a href="#main" class="aiutiNascosti" title="Vai al contenuto" aria-label="Vai al contenuto">Vai al contenuto principale</a></li>
     </ul>
     <img id="logo" src="../images/logo.png" alt="Logo che riporta il nome della casa Flora's House con sopra una spirale"/>
     <h1>Flora's House</h1>
     <h3>Un'autentico <span xml:lang="en">relax</span> nei meravigliosi Colli Euganei</h3>
 </div>
-<div id="breadcrumb">
+<div id="breadcrumb" title="Breadcrumb" aria-label="Breadcrumb">
     <p>Ti trovi in: <span xml:lang="en">Home</span></p>
 </div>
-<div id="menu">
+<div id="menu" role="navigation">
     <ul>
         <li xml:lang="en" id="currentLink">Home</li>
-        <li><a href="galleria.html">Galleria</a></li>
-        <li><a href="prenotazioni.html">Prenotazioni</a></li>
-        <li><a href="dintorni.html">Dintorni</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="galleria.html" title="Vai alla pagina galleria" aria-label="Vai alla pagina galleria">Galleria</a></li>
+        <li><a href="prenotazioni.html" title="Vai alla pagina prenotazioni" aria-label="Vai alla pagina prenotazioni">Prenotazioni</a></li>
+        <li><a href="dintorni.html" title="Vai alla pagina dintorni" aria-label="Vai alla pagina dintorni">Dintorni</a></li>
+        <li><a href="contatti.html" title="Vai alla pagina contatti" aria-label="Vai alla pagina contatti">Contatti</a></li>
     </ul>
 </div>
-<div id="main">
+<div id="main" role="main">
     <!-- una immagine della casa con del testo-->
     <img id="villa" src="../images/villa.png" alt="Villa con giardino ampio e al centro piscina con i lettini per sdraiarsi"/>
     <p id="titolo">Info generali</p>
@@ -46,7 +47,7 @@
     <p class="bord">La casa di campagna si trova in una posizione tranquilla ai piedi dei Colli Euganei con un ampio giardino esclusivo di circa 5.000 <abbr title="Metri quadrati">mq</abbr> con piscina. La casa ha 3 camere da letto (1 camera con un letto matrimoniale, 1 camera con due letti singoli, 1 camera con un letto singolo che può diventare un letto matrimoniale). Ci sono 3 bagni più un bagno di servizio con la lavatrice, cucina e ampia sala da pranzo e soggiorno con camino, la casa è dotata di aria condizionata e riscaldamento.
     </p>
 </div>
-<div id="footer">
+<div id="footer" title="footer" aria-label="footer">
     <img id="imgValidCSS" src="../images/vcss-blue.gif" alt="validità css"/>
     <img id="imgValidCode" src="../images/valid-xhtml10.png" alt="logo validità xhtml"/>
     <p>Autori del sito: Cesare Omodei, Daniele Spigolon, Valton Tahiraj</p>
