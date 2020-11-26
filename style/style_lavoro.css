@@ -2,12 +2,26 @@
 	padding: 0em;
 	margin: 0em;
 }
+html{
+    background-image: url("../images/colli.jpg");
+    width: 100%;
+}
 body{
     max-width:1024px;
     margin:auto;
+    font-family:"Verdana",cursive,Sans-serif;
     background-color: #FFF;
-    font-family:"Verdana",cursive,sans-serif;
     border: 1px solid black;
+}
+.aiutiNascosti{
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+}
+#header ul{
+    list-style-type: none;
 }
 #header{
     padding:2em; /*riferito al contenitore NOTA MOLTO BENE*/
@@ -32,11 +46,13 @@ body{
 	color:white;
 	background-color: #0610C9;
 	padding: 0.5em; 
+    font-weight: bold;
 }
 #menu{
 	float:left;
 	width: 20%;
 	padding: 0.8em;
+    font-weight: bold;
 }
 #menu ul{
 	list-style-type: none;
@@ -71,10 +87,18 @@ a:visited{
 #main p{
 	padding-bottom: 1em;
 }
-#main p#titolo{
+p#titolo{
 	font-style: italic;
 	text-align: center;
 	font-weight: bold;
+    padding-top: 0.5em;
+}
+.bord{
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #0610C9;
+    color:white;
 }
 #footer{
     text-align:center;
