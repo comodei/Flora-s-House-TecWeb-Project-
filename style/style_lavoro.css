@@ -87,7 +87,7 @@ a:visited{
 #main p{
 	padding-bottom: 1em;
 }
-p#titolo{
+p.titolo{
 	font-style: italic;
 	text-align: center;
 	font-weight: bold;
