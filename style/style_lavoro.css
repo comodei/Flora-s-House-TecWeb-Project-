@@ -86,13 +86,15 @@ img#villa{
 	line-height: 1.5em;
 }
 .main p{
-	padding-bottom: 1em;
+    font-size: 1em;
+	line-height: 1.5em;
 }
-p.titolo{
+.main h3{
 	font-style: italic;
 	text-align: center;
 	font-weight: bold;
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-size: 1.3em;
 }
 .bord{
@@ -141,7 +143,7 @@ p.titolo{
     margin-left: 0.5em;
     border-radius: 10px;
 }
-.main h2{
+.main h2{ /*essenzialmente pagina contatti*/
     font-size: 2em;
     padding-top:0.7em;
     padding-bottom: 1em;
