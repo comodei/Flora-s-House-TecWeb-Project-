@@ -16,7 +16,7 @@ body{
 }
 
 /*AIUTI ALLA NAVIGAZIONE: NB MOLTO IMPORTANTE*/
-.aiutiNascosti{
+#header a.aiutiNascosti{
     position:absolute;
     width: 1px;
     height: 1px;
@@ -54,7 +54,7 @@ body{
   color:white;
   background: linear-gradient(to bottom, #0610C9, #24325F);
   padding: 0.5em; 
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*MENU*/
@@ -207,13 +207,8 @@ div.slider {
 
 div.slides {
   display: flex; /*le vedi una sotto l'atra*/
-  
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  
 }
 div.slides::-webkit-scrollbar { /*linea sotto che va avanti e indietro: dimensioni*/
   width: 10px;
