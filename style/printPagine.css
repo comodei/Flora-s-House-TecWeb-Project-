@@ -6,9 +6,13 @@ html,body{
     font-family:"Times New Roman",Serif;
 }
 #header h1{font-size: 2em;}
+
 #header h3{font-size: 1.1em;
 			font-style: italic;
 			font-weight: normal;}
+a.aiutiNascosti{
+	display: none;
+}
 #logo{
 	display: none;
 }
@@ -32,14 +36,22 @@ html,body{
 .main h3{
 	margin-left: 1.0em;
 	margin-bottom: 1em;
+	margin-top: 1em;
 }
 .main h2{
-	margin-left: 1.0em;
-	margin-bottom: 1em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
 	font-size: 1.2em;
 }
 .main img{
 	display: none;
+}
+#attivita dt{
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	font-weight: bold;
 }
 #footer{
     text-align:center;
@@ -55,6 +67,9 @@ html,body{
 a:link:after, a:visited:after{
 	content: "["attr(href)"]";
 	font-size:90%;
+}
+div.slider a{
+	display: none;
 }
 .map_container{
 	display: none;
