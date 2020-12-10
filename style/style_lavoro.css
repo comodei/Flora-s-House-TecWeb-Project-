@@ -69,8 +69,11 @@ body{
 }
 #menu ul li{
   padding-bottom: 1.5em;
+  transition: width 2s;
 }
-
+#menu ul li:hover{
+  font-size: 1.3em;
+}
 /*LINK*/
 a {
   color: #00f;
