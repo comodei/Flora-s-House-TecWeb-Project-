@@ -217,16 +217,22 @@ img#villa{
     padding: 0.5em;
 }
 img.contacts{
-    width: 4%;
+    width: 3%;
     padding-right: 0.4em;
 }
 dl.elencoContatti dt{
     font-weight: bold;
-    font-size: 1.3em;
-    padding: 0.4em;
+    font-size: 1.4em;
+    padding-right: 0.4em;
+    display: inline;
 }
 dl.elencoContatti dd{
     font-size: 1.1em;
+    display: inline;
+}
+dl.elencoContatti dd:after{
+  display: block;
+  content: '';
 }
 ul.elenco li{
     padding-bottom: 0.3em;
