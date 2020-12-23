@@ -166,10 +166,15 @@ img#villa{
     background-color: #3A7F73;
     color: white;
 }
+#footer ul li{
+  list-style-type: none;
+}
 #imgValidCode{
+    padding-top:1em;
     float:left;
 }
 #imgValidCSS{
+    padding-top:1em;
     float:right;
 }
 
@@ -299,4 +304,24 @@ div.slider a {
 }
 div.slider > a:focus {
   background: #000;
+}
+/*PAGINA 404*/
+.main p.titolo_404{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em; 
+
+}
+.main p.sottotitolo_404{
+    font-size: 1.5em;   
+    text-align: center; 
+    width: 60%; 
+    float: left;  
+    margin: 8% 2em 2em 2em; 
+}
+.main img.img_404{
+    width: 30%;
+    height: auto; 
+    padding-top: 1em;
 }
