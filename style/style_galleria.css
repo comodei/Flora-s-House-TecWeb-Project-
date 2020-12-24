@@ -192,4 +192,6 @@
 	grid-column-end: 5;
 	grid-row-end: 5;
 }
-
+p.hiddenGalleria{
+  display: none;
+}

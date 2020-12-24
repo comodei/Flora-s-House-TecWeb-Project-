@@ -74,3 +74,10 @@ div.slider a{
 .map_container{
 	display: none;
 }
+/*Galleria*/
+div.text, div.numbertext{
+	display: none;
+}
+a.prev, a.next{
+	display: none;
+}
