@@ -90,31 +90,6 @@ body{
 #menu ul li a:hover:not(.active) {
   background-color: #1B4188;
 }
-/*#menu {
-    font-size: 1.1em;
-    overflow: hidden;
-}
-
-#menu ul li {
-    border-bottom: 2px solid #bc5800;
-    padding: 0.4em 0 0.4em 0;
-    list-style-type: none;
-    text-align: center;
-}
-
-#menu ul li a {
-    text-align: center;
-}
-
-#menu ul li a:visited {
-    color: purple;
-}
-
-#menu ul li a:hover {
-    color: red;
-}
-*/
-
 img#villa{
   display: block;
   margin: auto;
@@ -217,7 +192,7 @@ img#villa{
     padding: 0.5em;
 }
 img.contacts{
-    width: 3%;
+    width: 3.5%;
     padding-right: 0.4em;
 }
 dl.elencoContatti dt{
