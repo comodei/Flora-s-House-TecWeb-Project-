@@ -5,6 +5,7 @@
 }
 html{
     background-image: url("../images/colli.jpg");
+    background-attachment: fixed;
     width: 100%;
 }
 body{
