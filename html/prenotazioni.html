@@ -41,7 +41,29 @@
     </ul>
 </div>
 <div class="main" role="main">
-    <h2>Prenotazioni</h2>
+    <h2>Prenota il tuo Soggiorno!</h2>
+    <form method="post" action="nuovoProtagonista.php">
+      <fieldset>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" /><br/>
+        <label for="cognome">Cognome: </label>
+        <input type="text" name="cognome" id="cognome" /><br/>
+        <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.</abbr>: </label>
+        <input type="text" name="codiceFiscale" id="codiceFiscale" /><br/>
+        <label for="cellulare">Cellulare:</label>
+        <input type="text" name="cellulare" id="cellulare" /><br/>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" /><br/>
+      </fieldset>
+      <fieldset>
+        <label for="descrizione">Descrizione: </label>
+        <textarea id="descrizione" name="descrizione" rows="10" cols="50"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit" name="submit">Inserisci</button>
+        <button type="reset" name="reset">Reset Campi</button>
+      </fieldset>
+    </form>
 </div>
 <div id="footer" title="footer" aria-label="footer">
     <img id="imgValidCSS" src="../images/vcss-blue.gif" alt="validità css" role="img"/>
