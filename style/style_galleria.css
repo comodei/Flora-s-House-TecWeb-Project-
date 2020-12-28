@@ -195,3 +195,9 @@
 p.hiddenGalleria{
   display: none;
 }
+div.slideshow-container img{
+  width: 100%;
+}
+.punti{
+  text-align: center;
+}
