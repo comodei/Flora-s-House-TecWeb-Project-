@@ -1,4 +1,6 @@
 /*INZIO CSS*/
+
+/*REGOLE BASE CSS*/
 *{
   padding: 0em;
   margin: 0em;
@@ -188,6 +190,7 @@ img#villa{
 #attivita dd img.img_attivita{
   width:15%;
 }
+
 /*PAGINA CONTATTI*/
 .map_container{
     padding: 0.5em;
@@ -245,19 +248,16 @@ ul .nomeCitta{
     height: auto; 
     padding-top: 1em;
 }
-/* Slideshow container */
+
+/* SLIDESHOW */
 div.main .slideshow-container {
   max-width: 60%;
   position: relative;
   margin: auto;
 }
-
-/* Hide the images by default */
 div.main .mySlides {
   display: none;
 }
-
-/* Next & previous buttons */
 div.main .prev, div.main .next {
   cursor: pointer;
   position: absolute;
@@ -272,19 +272,13 @@ div.main .prev, div.main .next {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 div.main .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
 div.main .prev:hover, div.main .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
 div.main .text {
   color: #000;
   font-size: 15px;
@@ -294,8 +288,6 @@ div.main .text {
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
 div.main .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -303,8 +295,6 @@ div.main .numbertext {
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
 div.main .dot {
   cursor: pointer;
   height: 15px;
@@ -315,57 +305,41 @@ div.main .dot {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 div.main .active, div.main .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 div.main .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .7} 
   to {opacity: 1}
 }
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 div.main .galleria{
     width: 100%;
   height: auto;
     margin: 2em auto; 
 }
-
 div.main .contenitoreAnteprime{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 0.5em;
 }
-
-
-
 div.main .anteprima img{
   width: 100%;
     height: 100%;
   object-fit: cover;
 }
-
 div.main .anteprima img::before {
   content: "";
   padding-bottom: 100%;
   display: inline-block;
   vertical-align: top;
 }
-
 #anteprima1{
   grid-column-start: 1;
   grid-row-start: 1;
@@ -378,21 +352,18 @@ div.main .anteprima img::before {
   grid-column-end: 4;
   grid-row-end: 2;
 }
-
 #anteprima3{
   grid-column-start: 4;
   grid-row-start: 1;
   grid-column-end: 5;
   grid-row-end: 2;
 }
-
 #anteprima4{
   grid-column-start: 3;
   grid-row-start: 2;
   grid-column-end: 4;
   grid-row-end: 3;
 }
-
 #anteprima5{
   grid-column-start: 4;
   grid-row-start: 2;
@@ -405,28 +376,24 @@ div.main .anteprima img::before {
   grid-column-end: 2;
   grid-row-end: 4;
 }
-
 #anteprima7{
   grid-column-start: 2;
   grid-row-start: 3;
   grid-column-end: 3;
   grid-row-end: 4;
 }
-
 #anteprima8{
   grid-column-start: 1;
   grid-row-start: 4;
   grid-column-end: 2;
   grid-row-end: 5;
 }
-
 #anteprima9{
   grid-column-start: 2;
   grid-row-start: 4;
   grid-column-end: 3;
   grid-row-end: 5;
 }
-
 #anteprima10{
   grid-column-start: 3;
   grid-row-start: 3;
