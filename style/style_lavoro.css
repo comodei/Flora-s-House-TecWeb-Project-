@@ -225,68 +225,6 @@ ul .nomeCitta{
     font-size: 1.1em;
 }
 
-/*INIZIO PARTE SLIDER*/
-div.slider {
-  width: 500px;
-  text-align: center;
-  display: block;
-  margin: auto;
-  padding-bottom: 0.5em;
-}
-
-div.slides {
-  display: flex; /*le vedi una sotto l'atra*/
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-div.slides::-webkit-scrollbar { /*linea sotto che va avanti e indietro: dimensioni*/
-  width: 10px;
-  height: 10px;
-}
-div.slides::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #0610C9, #24325F);
-  border-radius: 10px;
-}
-div.slides::-webkit-scrollbar-track {
-  background: white;
-}
-div.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0; /*si vedono 5 immagini piccole*/
-  width: 500px;
-  height: 500px;
-  margin-right: 50px; /*serve per il bianco dopo le immagini*/
-  border-radius: 10px;
-  background: #eee; /*sfondo delle slide*/
-  transform-origin: center center;
-  transform: scale(1); /*si ingrandisce sempre più*/
-  transition: transform 0.5s;
-  position: relative;
-  font-size: 2em;
-}
-
-div.slides img { /*effettivamente per le immagini*/
-  object-fit: cover; /*per adattarle meglio*/
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-div.slider a {
-  display: inline-flex; /*per vederli uno dietro l'altro*/
-  width: 1.5em;
-  height: 1.5em;
-  background: linear-gradient(to bottom, #0610C9, #24325F);
-  color: white;
-  text-decoration: none; /*tira via sottolineatura dei link*/
-  justify-content: center; /*non si vedono bene i numeri*/
-  border-radius: 50%;
-  margin: 0 0 0.5em 0;
-  margin-top:0.5em;
-}
-div.slider > a:focus {
-  background: #000;
-}
 /*PAGINA 404*/
 .main p.titolo_404{
     font-size: 2em;
