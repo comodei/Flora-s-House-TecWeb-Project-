@@ -2,14 +2,14 @@
 
 /*REGOLE BASE CSS*/
 *{
-  padding: 0em;
-  margin: 0em;
+    padding: 0em;
+    margin: 0em;
 }
 html{
     background-image: url("../images/colli.jpg");
     background-attachment: fixed;
-	background-repeat:no-repeat;
-	background-size: cover;
+	  background-repeat:no-repeat;
+	  background-size: cover;
     width: 100%;
 }
 body{
@@ -35,18 +35,18 @@ body{
 #header{
     padding:1.5em; /*riferito al contenitore NOTA MOLTO BENE*/
     padding-bottom: 2.5em;
-	padding-top: 2em;
+	  padding-top: 2em;
     text-align:center;
     background-color: #3A7F73;
     color: #FFFFFF;
 }
 #header h1{
-  font-size: 4em;
-  font-style: italic;
+    font-size: 4em;
+    font-style: italic;
 }
 #header h3{
-  padding-top:1em;
-  font-style: italic;
+    padding-top:1em;
+    font-style: italic;
     font-size: 1.3em;
 }
 #logo{
@@ -55,7 +55,7 @@ body{
     max-width: 15em;
     border:1px solid white;
     border-radius: 20px;
-	margin-left: 2em;
+	  margin-left: 2em;
 }
 
 /*BREADCRUMB*/
@@ -106,7 +106,7 @@ img#villa{
 
 /*CONTENUTO GENERALE*/
 .main{
-  background-color: #C2D9CF;
+  background-color: #D4F5E7;
   padding: 1.5em 1em 3em 2em;
   font-size: 1em;
   line-height: 1.5em;
@@ -116,16 +116,16 @@ img#villa{
 	color: rgba(54,68,64,1.00);
 }
 .main h3{
-	color: rgba(42,61,54,1.00);
+	  color: rgba(42,61,54,1.00);
   	text-align: left;
-	margin-left: 1em;
+	  margin-left: 1em;
   	font-weight: bold;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.7em;
 }
 .main h2{ /*essenzialmente pagina contatti*/
-	color: rgba(42,61,54,1.00);
+	  color: rgba(42,61,54,1.00);
     font-size: 2em;
     padding-top:0.3em;
     padding-bottom: 0.8em;
@@ -170,17 +170,17 @@ img#villa{
     background-color: #3A7F73;
     color: white;
     font-weight: bold;
-	font-size: 1.3em;
+	  font-size: 1.3em;
     padding: 0.5em;
     margin-top: 1em;
 }
 #attivita dd{
-    border-top: none;
     padding: 0.5em; 
-	
-	background-color: rgba(172,200,192,1.00);
-	display: inline-block;
-	padding-bottom: 1em;
+	  background-color: #D4F5E7;
+	  display: inline-block;
+	  padding-bottom: 1em;
+    border: 3px solid rgba(172,200,192,1.00);
+    border-top: none;
 }
 #attivita dd img{
     float: right;
@@ -191,7 +191,7 @@ img#villa{
     border-radius: 10px;
 }
 #attivita dd img.img_attivita{
-  width:15%;
+    width:15%;
 }
 
 /*PAGINA CONTATTI*/
@@ -211,16 +211,17 @@ dl.elencoContatti dt{
 dl.elencoContatti dd{
     font-size: 1.1em;
     display: inline;
-	color: rgba(54,68,64,1.00);
+	  color: rgba(54,68,64,1.00);
 }
 dl.elencoContatti dd:after{
-  display: block;
-  content: '';
+    display: block;
+    content: '';
 }
 ul.elenco li{
     padding-bottom: 0.3em;
     font-size: 1.1em;
     list-style-type: square;
+    color: rgba(54,68,64,1.00);
 }
 ul li.diversoPeriodo{
     font-style: italic;
@@ -230,9 +231,6 @@ ul li.diversoPeriodo{
 ul .nomeCitta{
     font-weight: bold;
     font-size: 1.1em;
-}
-ul{
-	color: rgba(54,68,64,1.00);
 }
 
 /*PAGINA 404*/
@@ -258,30 +256,29 @@ ul{
 
 /* SLIDESHOW */
 div.main .slideshow-container {
-  max-width: 98%;
-  position: relative;
-  margin: auto;
+    max-width: 98%;
+    position: relative;
+    margin: auto;
 }
 
 div.main .slideshow-container::after{
-	display: block;
+	  display: block;
     content: '';
     /* se si vuole il 16:9 aspect ratio è 56.25%*/
     padding-bottom: 50%;
 }
 div.main .mySlides {
-  display: none;
+    display: none;
 }
 
 div.main .mySlides img {
-	position: absolute;
+	  position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-	object-fit: cover;
+	  object-fit: cover;
 }
-
 
 div.main .prev, div.main .next {
   cursor: pointer;
@@ -308,12 +305,12 @@ div.main .text {
   	color: white;
   	font-size: 1em;
   	position: absolute;
-	padding-top: 0.4em;
+	  padding-top: 0.4em;
   	bottom: 0em;
   	width: 100%;
   	text-align: center;
-	min-height: 5em;
-	background-color: rgba(0,0,0,0.5);
+	  min-height: 5em;
+	  background-color: rgba(0,0,0,0.5);
 }
 
 div.main .dot {
@@ -354,7 +351,7 @@ div.main .anteprima img{
   	width: 100%;
     height: 100%;
   	object-fit: cover;
-	cursor: pointer;
+	  cursor: pointer;
 }
 div.main .anteprima img::before {
   content: "";
