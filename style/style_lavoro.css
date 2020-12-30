@@ -147,10 +147,10 @@ img#villa{
     padding-top:0.2em;
     font-style: italic;
     background-color: #3A7F73;
-    color: white;
 }
 #footer ul li{
   list-style-type: none;
+  color: white;
 }
 #imgValidCode{
     padding-top:1em;
