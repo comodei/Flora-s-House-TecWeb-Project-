@@ -43,6 +43,7 @@
     <h2>Prenota il tuo Soggiorno!</h2>
     <form class="book" method="post" action="nuovoProtagonista.php" title="Form per prenotare" aria-label="Form per prenotare">
       <fieldset>
+      <legend>Dati Anagrafici</legend>
         <div class="row">
         <div class="col-25">
           <label for="nome">Nome: </label>
@@ -102,6 +103,7 @@
       </fieldset>
 
 	  <fieldset>
+    <legend>Date di Soggiorno e Pagamento</legend>
       <div class="row">
       <div class="col-25">
 		      <label for="checkin">Data di checkin:</label>
@@ -129,7 +131,7 @@
       </div>
       </fieldset>
       <div class="row">
-      <fieldset>
+      <fieldset class="bottoni">
         <input type="submit" value="INVIA DATI" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti"/>
         <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti" aria-label="Pulsante per resettare i dati inseriti"/>
       </fieldset>
