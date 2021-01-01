@@ -11,7 +11,7 @@
 <!-- per produrre la descrizione che compare sotto al titolo della pagina nella lista dei risultati prodotti a seguito di una query-->
 <meta name="viewport" content="width=device-width" />
 <meta name="keywords" content="Prenotazioni,Flora's House,Colli Euganei,Teolo"/>
-<meta name="author" content="Daniele Spigolon Cesare Omodei Valton Tahiraj"/>
+<meta name="author" content="Daniele Spigolon Cesare Omodei Valton Tahiraj Tommaso Gatta"/>
 <meta name="language" content="Italian it"/>
 
 <link rel="stylesheet" type="text/css" href="../style/style_lavoro.css" media="screen" />
@@ -61,11 +61,13 @@
       
 	  <fieldset>
 		<label for="checkin">Data di checkin:</label>
-        <input type="text" name="checkin" id="checkin" /><br/>
+        <input type="text" name="checkin" id="checkin" placeholder="GG-MM-AAAA" /><br/>
 		<label for="checkout">Data di checkout:</label>
-        <input type="text" name="checkout" id="checkout" /><br/>		
+        <input type="text" name="checkout" id="checkout" placeholder="GG-MM-AAAA"/><br/>		
         <label for="descrizione">Richieste Particolari: </label>
-        <textarea id="descrizione" name="descrizione" rows="10" cols="50"></textarea>
+        <textarea id="descrizione" name="descrizione" rows="10" cols="50">
+          Scrivi qui per 
+        </textarea>
       </fieldset>
       <fieldset>
         <button type="submit" name="submit">Inserisci</button>
