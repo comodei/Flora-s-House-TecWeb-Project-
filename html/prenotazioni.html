@@ -41,38 +41,99 @@
 </div>
 <div class="main" role="main">
     <h2>Prenota il tuo Soggiorno!</h2>
-    <form method="post" action="nuovoProtagonista.php" title="Form per prenotare" aria-label="Form per prenotare">
+    <form class="book" method="post" action="nuovoProtagonista.php" title="Form per prenotare" aria-label="Form per prenotare">
       <fieldset>
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" name="nome" /><br/>
-        <label for="cognome">Cognome: </label>
-        <input type="text" name="cognome" id="cognome" /><br/>
-        <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.</abbr>: </label>
-        <input type="text" name="codiceFiscale" id="codiceFiscale" /><br/>
-		<label for="nascita">Data di nascita:</label>
-        <input type="text" name="nascita" id="nascita" /><br/>
-        <label for="cellulare">Cellulare:</label>
-        <input type="text" name="cellulare" id="cellulare" /><br/>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" /><br/>
-		<label for="carta">Carta:</label>
-        <input type="text" name="carta" id="carta" /><br/>
+        <div class="row">
+        <div class="col-25">
+          <label for="nome">Nome: </label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="cognome">Cognome: </label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="cognome" id="cognome" placeholder="Inserisci il tuo cognome" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.</abbr>: </label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="codiceFiscale" id="codiceFiscale" placeholder="inserisci il tuo codice fiscale" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+		      <label for="nascita">Data di nascita:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="nascita" id="nascita" placeholder="GG-MM-AAAA" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="cellulare">Cellulare:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="cellulare" id="cellulare" placeholder="Inserisci il tuo numero di cellulare" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="email">Email:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="email" id="email" placeholder="Inserisci la tua email" aria-required="true"/><br/>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+		      <label for="carta">Carta:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="carta" id="carta" placeholder="Inserisci le cifre della tua carta" aria-required="true"/><br/>
+        </div>
+        </div>
       </fieldset>
-      
+
 	  <fieldset>
-		<label for="checkin">Data di checkin:</label>
-        <input type="text" name="checkin" id="checkin" placeholder="GG-MM-AAAA" /><br/>
-		<label for="checkout">Data di checkout:</label>
-        <input type="text" name="checkout" id="checkout" placeholder="GG-MM-AAAA"/><br/>		
+      <div class="row">
+      <div class="col-25">
+		      <label for="checkin">Data di checkin:</label>
+      </div>
+      <div class="col-75">
+          <input type="text" name="checkin" id="checkin" placeholder="GG-MM-AAAA" aria-required="true"/><br/>
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+		      <label for="checkout">Data di checkout:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="checkout" id="checkout" placeholder="GG-MM-AAAA" aria-required="true"/><br/>
+      </div>
+      </div>	
+      <div class="row">	
+      <div class="col-25">
         <label for="descrizione">Richieste Particolari: </label>
-        <textarea id="descrizione" name="descrizione" rows="10" cols="50">
-          Scrivi qui per 
+      </div>
+      <div class="col-75">
+        <textarea id="descrizione" name="descrizione" rows="10" cols="50">Scrivi qui il tuo messaggio per richieste particolari!
         </textarea>
+      </div>
+      </div>
       </fieldset>
+      <div class="row">
       <fieldset>
-        <button type="submit" name="submit">Inserisci</button>
-        <button type="reset" name="reset">Reset Campi</button>
+        <input type="submit" value="INVIA DATI" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti"/>
+        <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti" aria-label="Pulsante per resettare i dati inseriti"/>
       </fieldset>
+    </div>
     </form>
 </div>
 <div id="footer" title="footer" aria-label="footer">

@@ -428,3 +428,43 @@ div.slideshow-container img{
 .punti{
   text-align: center;
 }
+
+/*FORM PRENOTAZIONE*/
+form.book input[type=text], textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 0.5em;  
+}
+form.book label {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+form.book input[type=submit], input[type=reset]{
+  background-color: #3A7F73;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+form.book input[type=submit]:hover,input[type=reset]:hover {
+  background-color: #1B4188;
+}
+.col-25 {
+  float: left;
+  width: 14%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
