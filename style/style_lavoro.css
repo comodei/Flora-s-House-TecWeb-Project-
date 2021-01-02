@@ -439,6 +439,7 @@ form.book legend{
 form.book fieldset{
   border: 4px solid #3A7F73;
   border-radius: 10px;
+  margin-bottom: 0.5em;
 }
 form.book fieldset.bottoni{
   border-top: none;
