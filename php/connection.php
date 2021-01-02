@@ -12,7 +12,7 @@
         }
 
         public function closeConnection(){
-            $connection->close();
+            $this->connection->close();
         }
         public function isConnected(){
             if(mysqli_connect_errno($this->connection)){
