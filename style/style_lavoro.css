@@ -90,7 +90,7 @@ body{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.8em 1em;
   font-weight: bold;
 }
 #menu ul li a:hover:not(.active) {
@@ -419,12 +419,15 @@ div.main .anteprima img::before {
   grid-column-end: 5;
   grid-row-end: 5;
 }
+
 p.hiddenGalleria{
   display: none;
 }
+
 div.slideshow-container img{
   width: 100%;
 }
+
 .punti{
   text-align: center;
 }
@@ -472,6 +475,7 @@ form.book input[type=submit], input[type=reset]{
   cursor: pointer;
   float: left;
 }
+
 form.book input[type=submit]:hover,input[type=reset]:hover {
   background-color: #1B4188;
 }
