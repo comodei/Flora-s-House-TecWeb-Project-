@@ -1,8 +1,7 @@
 <?php
     require_once "connection.php";
-
     $connessione = new connection();
-    $paginaHTML = file_get_contents("../html/dintorni.html");
+    $paginaHTML = file_get_contents("..". DIRECTORY_SEPARATOR . "html". DIRECTORY_SEPARATOR ."dintorni.html");
     if($connessione->isConnected()){
         
         $listaAttivita = $connessione->getListAttivita();
