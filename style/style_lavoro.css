@@ -461,7 +461,7 @@ form.book input[type=text], textarea {
   resize: vertical;
   margin-bottom: 0.5em;  
 }
-form.book input[type=submit], input[type=reset]{
+form.book button, input[type=reset]{
   background-color: #3A7F73;
   color: white;
   padding: 0.8em 0.8em;
@@ -474,7 +474,7 @@ form.book input[type=submit], input[type=reset]{
   float: left;
 }
 
-form.book input[type=submit]:hover,input[type=reset]:hover {
+form.book button:hover,input[type=reset]:hover {
   background-color: #1B4188;
 }
 .col-25 {
