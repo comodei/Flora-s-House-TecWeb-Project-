@@ -67,6 +67,9 @@ img#logo{
     font-size: 1.3em;
 }
 /*PAGINA CONTATTI*/
+.main div.map_container{
+	margin-left: -1.2em;
+}
 dl.elencoContatti dt{
     font-weight: bold;
     font-size: 1.1em;
@@ -91,7 +94,7 @@ ul li.diversoPeriodo{
 }
 ul .nomeCitta{
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 /*FORM PRENOTAZIONI*/
