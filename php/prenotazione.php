@@ -1,5 +1,6 @@
 <?php
 require_once "connection.php";
+require_once "input_check.php";
 
 class prenotazione{
 
@@ -15,9 +16,14 @@ class prenotazione{
         $this->cf = $cf;
     }
 
-    /*public function isCorrect(){
-        //Controlli da fare su dati prenotazione
-    }*/
+    public function isCorrect(){
+		if(input_check::date_check($this->check_in) && input_check::date_check($this->check_out) && input_check::check_desc($this->richieste)){
+			if ( $this->check_in < $this->check_out){
+				return true;
+			} 
+		}
+		return false;
+	}
 
     public function inserisciPrenotazione(connection $db){
         
@@ -32,18 +38,16 @@ class prenotazione{
             return false;
         }
     }
+	
+	public function getCheckin(){
+		return $this->check_in;
+	}
+	public function getCheckout(){
+		return $this->check_out;
+	}
+	public function getDesc(){
+		return $this->richieste;
+	}
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-?>

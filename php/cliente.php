@@ -1,6 +1,6 @@
 <?php
 require_once "connection.php";
-
+require_once "input_check.php";
 class cliente{
 
     private $cf;
@@ -21,9 +21,10 @@ class cliente{
         $this->data_nascita=$da;
     }
 
-    /*public function isCorrect(){
-        //Controlli da fare sui dati
-    }*/
+    public function isCorrect(){
+       return input_check::check_nome($this->nome) && input_check::check_nome($this->cognome) && input_check::cf_check($this->cf) &&  
+		input_check::check_email($this->email) && input_check::check_card($this->card) && input_check::date_check($this->data_nascita);
+    }
    
     public function inserisciCliente(connection $db){
         
@@ -43,5 +44,29 @@ class cliente{
             }
         }
     }
+	public function getNome(){
+       return $this->nome;
+    }
+	public function getCognome(){
+       return $this->cognome;
+    }
+	public function getCF(){
+       return $this->cf;
+    }
+	public function getCell(){
+       return $this->cellulare;
+    }
+	public function getEmail(){
+       return $this->email;
+    }
+	public function getCarta(){
+       return $this->carta;
+    }
+	public function getNascita(){
+       return $this->data_nascita;
+    }
+	
+	
+	
 }
 ?>
