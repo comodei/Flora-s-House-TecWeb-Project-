@@ -1,0 +1,131 @@
+/*INIZIO CSS MOBILE*/
+
+/*FOOTER*/
+#footer{
+    text-align:center;
+    font-size: 0.9em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top:0.2em;
+    font-style: italic;
+    background-color: #3A7F73;
+}
+#imgValidCode{
+    display: none;
+}
+#imgValidCSS{
+    display: none;
+}
+
+/*HEADER*/
+#header h1{
+	font-size: 2em;
+}
+#header h3{
+	font-size: 1em;
+}
+#header{
+	padding: 0.6em;
+}
+img#logo{
+	display: none;
+}
+
+/*BREADCRUMB*/
+#breadcrumb{
+	padding: 0.3em;
+}
+
+/*MENU*/
+#menu ul li{
+	float:none;
+	padding: 0.1em;
+	border: 2px solid #314C43;
+}
+#menu ul li a{
+	padding: 0.2em;
+}
+
+/*CONTENUTO GENERALE*/
+.main p{
+	color: rgba(54,68,64,1.00);
+	font-size: 0.8em;
+}
+.main h2{ 
+	color: rgba(42,61,54,1.00);
+    font-size: 1.3em;
+    padding-top:0.3em;
+    padding-bottom: 0.8em;
+}
+.main h3{
+	color: rgba(42,61,54,1.00);
+  	text-align: left;
+	margin-left: 1em;
+  	font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.3em;
+}
+/*PAGINA CONTATTI*/
+.main div.map_container{
+	margin-left: -1.2em;
+}
+dl.elencoContatti dt{
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right: 0.4em;
+    display: inline;
+}
+dl.elencoContatti dd{
+    font-size: 1em;
+    display: inline;
+	color: rgba(54,68,64,1.00);
+}
+ul.elenco li{
+    padding-bottom: 0.3em;
+    font-size: 0.9em;
+    list-style-type: square;
+    color: rgba(54,68,64,1.00);
+}
+ul li.diversoPeriodo{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+}
+ul .nomeCitta{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/*FORM PRENOTAZIONI*/
+form.book input[type=text], textarea {
+  width: 70%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 0.5em;  
+}
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 0.5em;
+}
+/*PAGINA DINTORNI DL*/
+#attivita dt{
+    background-color: #3A7F73;
+    color: white;
+    font-weight: bold;
+	font-size: 0.9em;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+#attivita dd img{
+	display: none;
+}
