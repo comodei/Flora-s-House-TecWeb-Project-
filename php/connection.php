@@ -18,7 +18,7 @@
             $this->connection->close();
         }
         public function isConnected(){
-            if(mysqli_connect_errno($this->connection)){
+            if($this->connection->connect_errno){
                 return false;
             }
             else{
