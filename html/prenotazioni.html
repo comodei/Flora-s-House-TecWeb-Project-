@@ -39,9 +39,10 @@
         <li><a href="contatti.html" title="Vai alla pagina contatti" aria-label="Vai alla pagina contatti">Contatti</a></li>
     </ul>
 </div>
+<messaggi/>
 <div class="main" role="main">
     <h2>Prenota il tuo Soggiorno!</h2>
-    <form class="book" method="post" action="nuovoProtagonista.php" title="Form per prenotare" aria-label="Form per prenotare">
+    <form class="book" action="../php/nuovaPrenotazione.php" method="post" title="Form per prenotare" aria-label="Form per prenotare">
       <fieldset>
       <legend>Dati Anagrafici</legend>
         <div class="row">
@@ -132,7 +133,7 @@
       </fieldset>
       <div class="row">
       <fieldset class="bottoni">
-        <input type="submit" value="INVIA DATI" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti"/>
+        <button type="submit" name="submit">Inserisci</button>
         <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti" aria-label="Pulsante per resettare i dati inseriti"/>
       </fieldset>
     </div>
