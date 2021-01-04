@@ -10,7 +10,10 @@
             $this->connection = mysqli_connect(connection::HOST,connection::USERNAME,
                 connection::PASSWORD, connection::DATABASE);
         }
-
+        
+        public function getConnection(){
+            return $this->connection;
+        }
         public function closeConnection(){
             $this->connection->close();
         }
