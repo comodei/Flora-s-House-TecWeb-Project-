@@ -450,6 +450,8 @@ form.book fieldset.bottoni{
 form.book label{
   margin-left: 0.4em;
   color:rgba(54,68,64,1.00);
+  padding: 0.2em 0.2em 0.2em 0;
+  display: inline-block;
 }
 form.book input[type=text], textarea {
   width: 80%;
@@ -458,10 +460,6 @@ form.book input[type=text], textarea {
   border-radius: 4px;
   resize: vertical;
   margin-bottom: 0.5em;  
-}
-form.book label {
-  padding: 0.2em 0.2em 0.2em 0;
-  display: inline-block;
 }
 form.book input[type=submit], input[type=reset]{
   background-color: #3A7F73;

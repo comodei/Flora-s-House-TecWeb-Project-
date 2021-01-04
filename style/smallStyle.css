@@ -1,6 +1,6 @@
-img#logo{
-	display: none;
-}
+/*INIZIO CSS MOBILE*/
+
+/*FOOTER*/
 #footer{
     text-align:center;
     font-size: 0.9em;
@@ -16,6 +16,8 @@ img#logo{
 #imgValidCSS{
     display: none;
 }
+
+/*HEADER*/
 #header h1{
 	font-size: 2em;
 }
@@ -25,9 +27,16 @@ img#logo{
 #header{
 	padding: 0.6em;
 }
+img#logo{
+	display: none;
+}
+
+/*BREADCRUMB*/
 #breadcrumb{
 	padding: 0.3em;
 }
+
+/*MENU*/
 #menu ul li{
 	float:none;
 	padding: 0.1em;
@@ -36,6 +45,8 @@ img#logo{
 #menu ul li a{
 	padding: 0.2em;
 }
+
+/*CONTENUTO GENERALE*/
 .main p{
 	color: rgba(54,68,64,1.00);
 	font-size: 0.8em;
@@ -55,6 +66,7 @@ img#logo{
     padding-bottom: 0.5em;
     font-size: 1.3em;
 }
+/*PAGINA CONTATTI*/
 dl.elencoContatti dt{
     font-weight: bold;
     font-size: 1.1em;
@@ -62,28 +74,29 @@ dl.elencoContatti dt{
     display: inline;
 }
 dl.elencoContatti dd{
-    font-size: 1.1em;
+    font-size: 1em;
     display: inline;
-	  color: rgba(54,68,64,1.00);
+	color: rgba(54,68,64,1.00);
 }
 ul.elenco li{
     padding-bottom: 0.3em;
-    font-size: 1em;
+    font-size: 0.9em;
     list-style-type: square;
     color: rgba(54,68,64,1.00);
 }
 ul li.diversoPeriodo{
     font-style: italic;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 ul .nomeCitta{
     font-weight: bold;
     font-size: 0.9em;
 }
-/*form*/
+
+/*FORM PRENOTAZIONI*/
 form.book input[type=text], textarea {
-  width: 80%;
+  width: 70%;
   padding: 0.8em;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -92,7 +105,7 @@ form.book input[type=text], textarea {
 }
 .col-25 {
   float: left;
-  width: 36%;
+  width: 50%;
   margin-top: 0.5em;
 }
 
@@ -100,4 +113,16 @@ form.book input[type=text], textarea {
   float: left;
   width: 50%;
   margin-top: 0.5em;
+}
+/*PAGINA DINTORNI DL*/
+#attivita dt{
+    background-color: #3A7F73;
+    color: white;
+    font-weight: bold;
+	font-size: 0.9em;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+#attivita dd img{
+	display: none;
 }
