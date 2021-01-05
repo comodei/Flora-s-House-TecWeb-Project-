@@ -619,12 +619,12 @@ form.book button:hover,input[type=reset]:hover {
 }
 .col-25 {
   float: left;
-  width: 25%;
+  width: 30%;
   margin-top: 0.5em;
 }
 
 .col-75 {
   float: left;
-  width: 75%;
+  width: 70%;
   margin-top: 0.5em;
 }
