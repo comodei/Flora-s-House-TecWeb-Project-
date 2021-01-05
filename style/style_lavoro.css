@@ -218,8 +218,8 @@ img.imgDot{
     padding-right: 0.4em;
 	margin-bottom: -0.16em;
 }
-img .contacts{
-	
+#contattiContainer .contacts{
+	margin-bottom: 0em;
 }
 dl.elencoContatti dt{
     font-weight: bold;
