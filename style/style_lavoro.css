@@ -97,10 +97,12 @@ body{
 #menu ul li{
 	float: left;
 	border-right: 2px solid #314C43;
-	min-width: 19.8%;
+	margin-right: -2px;
+	min-width: 20%;
 }
 #menu .endMenu{
 	border-right: 0px;
+	margin-right: 0px;
 }
 #menu ul li a{
   display: block;
