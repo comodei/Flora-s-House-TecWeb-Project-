@@ -8,8 +8,8 @@
 html{
     background-image: url("../images/colli.jpg");
     background-attachment: fixed;
-	  background-repeat:no-repeat;
-	  background-size: cover;
+	background-repeat:no-repeat;
+	background-size: cover;
     width: 100%;
 }
 body{
@@ -29,33 +29,38 @@ body{
 }
 
 /*HEADER*/
+
+@font-face {
+  font-family: titleFont;
+  src: url("../MontserratAlternates-Regular.ttf");
+}
+
 #header ul{
     list-style-type: none;
 }
 #header{
     padding:1.5em; /*riferito al contenitore NOTA MOLTO BENE*/
     padding-bottom: 2.5em;
-	  padding-top: 2em;
+	padding-top: 2em;
     text-align:center;
-    background-color: #3A7F73;
+	background-color: #3A7F73;
     color: #FFFFFF;
 }
 #header h1{
-    font-size: 4em;
-    font-style: italic;
+    font-size: 5.5em;
+	font-family: titleFont,"Arial",cursive,Sans-serif;
 }
 #header h3{
-    padding-top:1em;
-    font-style: italic;
+    padding-top:0.4em;
+	font-family: titleFont,"Arial",cursive,Sans-serif;
     font-size: 1.3em;
 }
 #logo{
     float:left;
-    width:25%;
-    max-width: 15em;
-    border:1px solid white;
-    border-radius: 20px;
-	  margin-left: 2em;
+    width:auto;
+	max-height: 10em;
+	margin-left: 4em;
+	object-fit: contain;
 }
 
 /*BREADCRUMB*/
@@ -74,6 +79,13 @@ body{
   padding: 14px 16px;
   background-color: #37585A;
   font-weight: bold;
+}
+
+#menu{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 #menu ul{
   list-style-type: none;
@@ -116,19 +128,23 @@ img#villa{
 	color: rgba(54,68,64,1.00);
 }
 .main h3{
-	  color: rgba(42,61,54,1.00);
+	color: rgba(42,61,54,1.00);
   	text-align: left;
-	  margin-left: 1em;
   	font-weight: bold;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-size: 1.7em;
+	font-family: titleFont,"Arial",cursive,Sans-serif;
 }
 .main h2{ /*essenzialmente pagina contatti*/
-	  color: rgba(42,61,54,1.00);
+	color: rgba(42,61,54,1.00);
     font-size: 2em;
     padding-top:0.3em;
     padding-bottom: 0.8em;
+	font-family: titleFont,"Arial",cursive,Sans-serif;
+}
+.main dt{
+	color: rgba(42,61,54,1.00);
 }
 .bord{
     padding: 0.4em;
@@ -140,11 +156,13 @@ img#villa{
 
 /*FOOTER*/
 #footer{
+	
     text-align:center;
-    font-size: 1em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    padding-top:0.2em;
+	padding-bottom: 3.2em;
+    font-size: 0.8em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-top:1.8em;
     font-style: italic;
     background-color: #3A7F73;
 }
@@ -198,9 +216,13 @@ img#villa{
 .map_container{
     padding: 0.5em;
 }
-img.contacts{
+img.imgDot{
     width: 3%;
     padding-right: 0.4em;
+	margin-bottom: -0.16em;
+}
+img .contacts{
+	
 }
 dl.elencoContatti dt{
     font-weight: bold;
@@ -262,22 +284,27 @@ div.main .slideshow-container {
 }
 
 div.main .slideshow-container::after{
-	  display: block;
+	display: block;
     content: '';
-    /* se si vuole il 16:9 aspect ratio è 56.25%*/
-    padding-bottom: 50%;
+	padding-bottom: 50%; /* questo parametro regola l'aspect ratio, se si vuole il 16:9 aspect ratio è 56.25%*/
 }
+
+
+#slideshow_home::after{
+	padding-bottom: 37%; /*per la home occupa meno spazio*/
+}
+
 div.main .mySlides {
     display: none;
 }
 
 div.main .mySlides img {
-	  position: absolute;
+	position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-	  object-fit: cover;
+	object-fit: cover;
 }
 
 div.main .prev, div.main .next {
@@ -301,18 +328,20 @@ div.main .next {
 div.main .prev:hover, div.main .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-div.main .text {
+div.main .slidetext {
   	color: white;
   	font-size: 1em;
   	position: absolute;
-	  padding-top: 0.4em;
+	padding-top: 0.4em;
   	bottom: 0em;
   	width: 100%;
-  	text-align: center;
-	  min-height: 5em;
-	  background-color: rgba(0,0,0,0.5);
+  	text-align: center;  
+	min-height: 5em;
+	background-color: rgba(0,0,0,0.5);
 }
-
+div.main .hometext{
+	min-height: 2em;
+}
 div.main .dot {
   cursor: pointer;
   height: 15px;
