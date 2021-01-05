@@ -119,7 +119,7 @@ img#villa{
 /*CONTENUTO GENERALE*/
 .main{
   background-color: #D4F5E7;
-  padding: 1em 2.5em;
+  padding: 1.5em 2.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -245,11 +245,20 @@ ul.elenco li{
 	margin-left: 1.7em;
 }
 
-}
-ul li.diversoPeriodo{
-    font-style: italic;
-    font-weight: bold;
+#periodoApertura .diversoPeriodo{
+	font-weight: bold;
+	font-style: italic;
     font-size: 1.3em;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+}
+#periodoApertura h2{
+	font-size: 1.5em;
+	
+}
+
+#periodoApertura .elenco li{
+	font-size: 1.3em;
 }
 ul .nomeCitta{
     font-weight: bold;
@@ -266,7 +275,8 @@ ul .nomeCitta{
 }
 
 #maps{
-	height: 95%;
+	margin-top: 6em;
+	height: 80%;
 	width: 90%;
 	border: 1px solid rgba(54,68,64,0.5);
 }
@@ -277,15 +287,23 @@ ul .nomeCitta{
 	display: grid;
 	grid-template-columns: repeat(5, 20%);
 	grid-template-rows: repeat(3, 1fr);
-	grid-row-gap: 2.5em;
+	grid-row-gap: 1.5em;
+	padding-top: 2em;
 }
 #contattaci{
+	
 	grid-area: 1 / 1 / span 1 / span 3;
 }
 
 #periodoApertura{
 	grid-area: 2 / 1 / span 1 / span 3;
+	
+  	border: 4px solid #3A7F73;
+  	border-radius: 10px;
+	margin-right: 8em;
+	padding: 1em 0em 1em 2.5em;
 }
+
 /*#cittaVicine{
 	grid-area: 2 / 4 / span 1 / span 2;
 }*/
