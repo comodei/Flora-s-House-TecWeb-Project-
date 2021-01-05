@@ -310,10 +310,10 @@ ul .nomeCitta{
 	padding: 1em 0em 0em 2.5em;
 }
 
-#cittaVicine{
+/*#cittaVicine{
 	visibility: hidden;
 	height: 0;
-}
+}*/
 
 #map_container{
 	grid-area: 1 / 4 / span 2 / span 2;
