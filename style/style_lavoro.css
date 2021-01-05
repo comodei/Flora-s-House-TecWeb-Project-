@@ -76,7 +76,7 @@ body{
   display: block;
   color: white;
   text-align: center;
-	padding: 0.8em 1em;
+	padding: 0.8em 0em;
   background-color: #37585A;
   font-weight: bold;
 }
@@ -97,7 +97,7 @@ body{
 #menu ul li{
 	float: left;
 	border-right: 2px solid #314C43;
-	min-width: 19.2%;
+	min-width: 19.8%;
 }
 #menu .endMenu{
 	border-right: 0px;
