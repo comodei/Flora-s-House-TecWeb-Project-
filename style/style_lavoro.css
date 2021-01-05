@@ -119,7 +119,7 @@ img#villa{
 /*CONTENUTO GENERALE*/
 .main{
   background-color: #D4F5E7;
-  padding: 1.5em 1em 3em 2em;
+  padding: 1em 2.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -213,9 +213,6 @@ img#villa{
 }
 
 /*PAGINA CONTATTI*/
-.map_container{
-    padding: 0.5em;
-}
 img.imgDot{
     width: 3%;
     padding-right: 0.4em;
@@ -233,17 +230,21 @@ dl.elencoContatti dt{
 dl.elencoContatti dd{
     font-size: 1.1em;
     display: inline;
-	  color: rgba(54,68,64,1.00);
+	color: rgba(54,68,64,1.00);
 }
 dl.elencoContatti dd:after{
     display: block;
     content: '';
+	padding-bottom: 0.5em;
 }
 ul.elenco li{
     padding-bottom: 0.3em;
     font-size: 1.1em;
     list-style-type: square;
     color: rgba(54,68,64,1.00);
+	margin-left: 1.7em;
+}
+
 }
 ul li.diversoPeriodo{
     font-style: italic;
@@ -253,6 +254,49 @@ ul li.diversoPeriodo{
 ul .nomeCitta{
     font-weight: bold;
     font-size: 1.1em;
+}
+
+#raggiungiCitta h2{
+	font-size: 1.5em;
+}
+
+#contattaci h2{
+	font-size: 3em;
+	padding-bottom: 1em;
+}
+
+#maps{
+	height: 95%;
+	width: 90%;
+	border: 1px solid rgba(54,68,64,0.5);
+}
+
+/*qui sono disposti gli elementi di contatti*/
+#contattiContainer{
+	
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+	grid-template-rows: repeat(3, 1fr);
+	grid-row-gap: 2.5em;
+}
+#contattaci{
+	grid-area: 1 / 1 / span 1 / span 3;
+}
+
+#periodoApertura{
+	grid-area: 2 / 1 / span 1 / span 3;
+}
+/*#cittaVicine{
+	grid-area: 2 / 4 / span 1 / span 2;
+}*/
+
+#map_container{
+	grid-area: 1 / 4 / span 2 / span 2;
+	
+	
+}
+#raggiungiCitta{
+	grid-area: 3 / 1 / span 1 / span 5;
 }
 
 /*PAGINA 404*/

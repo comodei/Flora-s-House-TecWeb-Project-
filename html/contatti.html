@@ -44,47 +44,56 @@ per la Flora's House"/>
 </div>
 
 <div class="main" role="main">
-        <h2>Contatti Principali</h2>
-        <dl class="elencoContatti">
-            <dt><img class="contacts imgDot" src="../images/telefono.png" alt=""/>Telefono &amp; Fax:</dt>
-            <dd><a href="tel:+39049000000" title="Chiama Flora's House" role="link" aria-label="049 000000">049 000000</a></dd>
-            <dt><img class="contacts imgDot" src="../images/cellulare4.png" alt=""/>Cellulare:</dt>
-            <dd><a href="tel:+3939200000000" title="Chiama Flora's House" role="link" aria-label="392 00000000">392 00000000</a></dd>
-            <dt><img class="contacts imgDot" src="../images/email2.png" alt=""/><span xml:lang="en">Mail:</span></dt>
-            <dd><a href="mailto:informazioni@florahouse.it" title="Invia una mail a Flora's House" role="link" aria-label="info@florahouse.it">info@florahouse.it</a>
-            </dd>
-            <dt><img class="contacts imgDot" src="../images/indirizzo2.png" alt=""/>Indirizzo:</dt>
-            <dd>Via Roma, 100 - 35037 Teolo (Italia)</dd>
-        </dl>
-
-        <h2>Periodo di apertura</h2>
-        <ul class="elenco">
-        <li>Giugno</li>
-        <li>Luglio</li>
-        <li>Agosto</li>
-        <li class="diversoPeriodo">Per periodi diversi contattaci!</li>
-        </ul>
+	<div id="contattiContainer">
+		<div id="contattaci">
+    	    <h2>Contattaci!</h2>
+    	    <dl class="elencoContatti">
+    	        <dt><img class="contacts imgDot" src="../images/telefono.png" alt=""/>Telefono &amp; Fax:</dt>
+    	        <dd><a href="tel:+39049000000" title="Chiama Flora's House" role="link" aria-label="049 000000">049 000000</a></dd>
+    	        <dt><img class="contacts imgDot" src="../images/cellulare4.png" alt=""/>Cellulare:</dt>
+    	        <dd><a href="tel:+3939200000000" title="Chiama Flora's House" role="link" aria-label="392 00000000">392 00000000</a></dd>
+    	        <dt><img class="contacts imgDot" src="../images/email2.png" alt=""/><span xml:lang="en">Mail:</span></dt>
+    	        <dd><a href="mailto:informazioni@florahouse.it" title="Invia una mail a Flora's House" role="link" aria-label="info@florahouse.it">info@florahouse.it</a>
+    	        </dd>
+    	        <dt><img class="contacts imgDot" src="../images/indirizzo2.png" alt=""/>Indirizzo:</dt>
+    	        <dd>Via Roma, 100 - 35037 Teolo (Italia)</dd>
+    	    </dl>
+		</div>
 	
-        <h2>Città Vicine?</h2>
-            <ul class="elenco">
-               <li>Vicenza</li>
-               <li>Bologna</li>
-               <li>Padova</li>
-               <li>Monselice</li>
-            </ul>
-        <h2>Come raggiungere le Città Vicine?</h2>
-            <ul class="elenco">
-            <li>Per raggiunere <span class="nomeCitta">Vicenza</span> ci si impiega circa 40 minuti prendendo 
-            l'autostrada A31.</li>
-            <li>Per raggiungere <span class="nomeCitta">Monselice</span> ci si impiega circa 20 minuti passando per Vo' Euganeo, Lozzo Atestino e infine Cinto Euganeo.</li>
-            <li>Per raggiungere <span class="nomeCitta">Bologna</span> ci si impiega circa 2 ore e mezza prendendo 
-            l'autostrada A13.</li>
-            <li>Per raggiungere <span class="nomeCitta">Padova</span> ci si impiega circa 38 minuti in auto passando per Selvazzano Dentro.</li>
-            </ul>
-        <div class="map_container">
-            <h2>Mappa Google</h2>
-            <object id="maps" title="Posizione di Flora House sulla mappa" tabindex="-1" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.981476838104!2d11.67414961495981!3d45.34918617909972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f26512daa2a37%3A0x9b88e397779adcd7!2sVia%20Roma%2C%20Teolo%20PD!5e0!3m2!1sit!2sit!4v1606927975762!5m2!1sit!2sit"></object>
-        </div>	
+    	    <div id="periodoApertura">
+				<h2>Periodo di apertura</h2>
+    	    	<ul class="elenco">
+    	    	<li>Giugno</li>
+    	    	<li>Luglio</li>
+    	    	<li>Agosto</li>
+    	    	<li class="diversoPeriodo">Per periodi diversi contattaci!</li>
+    	    	</ul>
+			</div>
+		
+    	    <!--<div id="cittaVicine">
+				<h2>Quali sono le città più vicine?</h2>
+    	        <ul class="elenco">
+    	           <li>Vicenza</li>
+    	           <li>Bologna</li>
+    	           <li>Padova</li>
+    	           <li>Monselice</li>
+    	        </ul>
+			</div>-->
+			<div id="raggiungiCitta">
+    	    <h2>Come raggiungo le Città Vicine?</h2>
+    	        <ul class="elenco">
+    	        <li>Per raggiunere <span class="nomeCitta">Vicenza</span> ci si impiega circa 40 minuti prendendo 
+    	        l'autostrada A31.</li>
+    	        <li>Per raggiungere <span class="nomeCitta">Monselice</span> ci si impiega circa 20 minuti passando per Vo' Euganeo, Lozzo Atestino e infine Cinto Euganeo.</li>
+    	        <li>Per raggiungere <span class="nomeCitta">Bologna</span> ci si impiega circa 2 ore e mezza prendendo 
+    	        l'autostrada A13.</li>
+    	        <li>Per raggiungere <span class="nomeCitta">Padova</span> ci si impiega circa 38 minuti in auto passando per Selvazzano Dentro.</li>
+    	        </ul>
+			</div>
+    	    <div id="map_container">
+    	        <object id="maps" title="Posizione di Flora House sulla mappa" tabindex="-1" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.981476838104!2d11.67414961495981!3d45.34918617909972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f26512daa2a37%3A0x9b88e397779adcd7!2sVia%20Roma%2C%20Teolo%20PD!5e0!3m2!1sit!2sit!4v1606927975762!5m2!1sit!2sit"></object>
+    	    </div>
+		</div>
 </div>
 
 <div id="footer" title="footer" aria-label="footer">
