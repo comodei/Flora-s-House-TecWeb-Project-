@@ -97,7 +97,7 @@ body{
 #menu ul li{
 	float: left;
 	border-right: 2px solid #314C43;
-	width: 19.2%;
+	min-width: 19.2%;
 }
 #menu .endMenu{
 	border-right: 0px;
