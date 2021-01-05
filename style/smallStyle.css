@@ -39,7 +39,9 @@ img#logo{
 #menu ul li a{
 	padding: 0.2em;
 }
-
+.main{
+	padding: 1.2em; /*troppo stretto altrimenti, perfetto per il form che non sgrana*/
+}
 /*CONTENUTO GENERALE*/
 .main p{
 	font-size: 0.8em;
@@ -89,7 +91,6 @@ form.book input[type=text], textarea {
 	display: none;
 }
 div.main .slideshow-container {
-    max-width: 90%;
     height: 12em;
 }
 div.main .slidetext {
