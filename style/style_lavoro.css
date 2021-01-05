@@ -76,7 +76,7 @@ body{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+	padding: 0.8em 1em;
   background-color: #37585A;
   font-weight: bold;
 }
@@ -275,12 +275,50 @@ ul .nomeCitta{
 }
 
 #maps{
-	margin-top: 5em;
-	height: 80%;
+	margin-top: 0.3em;
+	margin-bottom: 3em;
+	height: 100%;
 	width: 90%;
 	border: 1px solid rgba(54,68,64,0.5);
 }
 
+/*qui sono disposti gli elementi di contatti*/
+#contattiContainer{
+	
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+	grid-template-rows: auto;
+	grid-row-gap: 1.5em;
+	padding-top: 1.5em;
+}
+#contattaci{
+	
+	grid-area: 1 / 1 / span 1 / span 3;
+}
+
+#periodoApertura{
+	grid-area: 2 / 1 / span 1 / span 3;
+	
+  	border: 4px solid #3A7F73;
+  	border-radius: 10px;
+	margin-right: 8em;
+	padding: 1em 0em 1em 2.5em;
+}
+
+#cittaVicine{
+	visibility: hidden;
+	height: 0;
+}
+
+#map_container{
+	grid-area: 1 / 4 / span 2 / span 2;
+	
+	
+}
+#raggiungiCitta{
+	grid-area: 3 / 1 / span 1 / span 5;
+	padding-bottom: 4em;
+}
 /*qui sono disposti gli elementi di contatti*/
 #contattiContainer{
 	
@@ -306,6 +344,7 @@ ul .nomeCitta{
 
 #cittaVicine{
 	visibility: hidden;
+	height: 0em;
 }
 
 #map_container{
