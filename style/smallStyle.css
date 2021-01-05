@@ -90,8 +90,9 @@ form.book input[type=text], textarea {
 }
 div.main .slideshow-container {
     max-width: 90%;
+    height: 12em;
 }
-div.main .text {
+div.main .slidetext {
 	font-size: 0.8em;
 	  min-height: 2em;
 }

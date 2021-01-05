@@ -158,8 +158,8 @@ img#villa{
 #footer{
 	
     text-align:center;
-	padding-bottom: 3.2em;
-    font-size: 0.8em;
+	padding-bottom: 1.5em;
+    font-size: 1em;
     padding-right: 1.5em;
     padding-left: 1.5em;
     padding-top:1.8em;
@@ -572,7 +572,7 @@ form.book button:hover,input[type=reset]:hover {
 }
 .col-25 {
   float: left;
-  width: 14%;
+  width: 15%;
   margin-top: 0.5em;
 }
 

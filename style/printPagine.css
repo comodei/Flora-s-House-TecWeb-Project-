@@ -75,7 +75,7 @@ div.slider a{
 	display: none;
 }
 /*Galleria*/
-div.text, div.numbertext{
+div.slidetext{
 	display: none;
 }
 a.prev, a.next{
