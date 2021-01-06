@@ -388,7 +388,7 @@ ul .nomeCitta{
 div.main .slideshow-container {
     max-width: 98%;
     position: relative;
-    margin: auto;
+    margin: auto; 
 }
 
 div.main .slideshow-container::after{
@@ -399,7 +399,7 @@ div.main .slideshow-container::after{
 
 
 #slideshow_home::after{
-	padding-bottom: 37%; /*per la home occupa meno spazio*/
+	padding-bottom: 42%; /*per la home occupa meno spazio*/
 }
 
 div.main .mySlides {
@@ -444,7 +444,7 @@ div.main .slidetext {
   	bottom: 0em;
   	width: 100%;
   	text-align: center;  
-	min-height: 5em;
+	min-height: 2em;
 	background-color: rgba(0,0,0,0.5);
 }
 div.main .hometext{
