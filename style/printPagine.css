@@ -5,11 +5,15 @@
 html,body{
     font-family:"Times New Roman",Serif;
 }
-#header h1{font-size: 2em;}
+#header h1{
+	font-size: 2em;
+}
 
-#header h3{font-size: 1.1em;
-			font-style: italic;
-			font-weight: normal;}
+#header h3{
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: normal;
+}
 a.aiutiNascosti{
 	display: none;
 }
@@ -18,12 +22,6 @@ a.aiutiNascosti{
 }
 #menu{
 	display:none;
-}
-#villa{
-	display: none;
-}
-.contentImg{
-	display: none;
 }
 #breadcrumb{
 	display: none;
@@ -71,7 +69,7 @@ a:link:after, a:visited:after{
 div.slider a{
 	display: none;
 }
-.map_container{
+#map_container{
 	display: none;
 }
 /*Galleria*/
@@ -83,4 +81,8 @@ a.prev, a.next{
 }
 p#hiddenScreen{
   visibility: hidden;
+}
+p.hiddenGalleria{
+	font-size: 1.5em;
+	font-style: italic;
 }
