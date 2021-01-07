@@ -12,7 +12,7 @@
             foreach($listaAttivita as $attivita){
                 $dlAttivita.='<dt>'. $attivita['Titolo'] . '</dt>';
                 $dlAttivita.='<dd>';
-                $dlAttivita.='<img src="'. $attivita["Immagine"].'" alt="'. $attivita["AltImmagine"] . '" role="img"/>';
+                $dlAttivita.='<img src="'. $attivita["Immagine"].'" alt="'. $attivita["AltImmagine"] . '"/>';
                 $dlAttivita.='<p>'. $attivita["Descrizione"] . '</p>';
                 $dlAttivita.='<a href="'. $attivita["Link"] . '" title="Vai alla pagina per maggiori informazioni sull\'attività" 
                 aria-label="Vai alla pagina per maggiori informazioni sull\'attività">Maggiori informazioni qui</a>';
