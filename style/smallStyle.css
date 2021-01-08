@@ -108,3 +108,59 @@ p#hiddenScreen{
 	font-size: 1em;
 	color: rgba(54,68,64,1.00);
 }
+
+
+
+div.main .slideshow-container{
+	max-width: 100%;
+	padding: 1em 0em 0em;
+	
+}
+
+#mainGalleria{
+	padding: 2em 0em 0em;
+	background-color: rgba(2,21,19,1.00);
+	
+}
+
+div.main .galleria{
+	background-color: #8DC4AB;
+	margin: 0em;
+	width: 100%;
+	padding: 1em 0em 2em;
+}
+
+div.main .contenitoreAnteprime{
+	display: block;
+}
+
+div.main .anteprima{
+	padding: 0em 0em 0.5em;
+}
+
+#contattiContainer{
+	display: block;
+}
+
+#periodoApertura{
+	margin: 1em 0em;
+}
+
+#maps{
+	margin: 0em;
+	width: 100%;
+	min-height:  inherit;
+	min-width: 100%;
+}
+
+#map_container{
+	min-height: 18em;
+}
+
+#raggiungiCitta{
+	padding-bottom: 2em;
+}
+
+#contattaci .elencoContatti{
+	padding-left: 0.3em;
+}
