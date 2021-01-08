@@ -45,6 +45,10 @@ body{
     text-align:center;
 	background-color: #3A7F73;
     color: #FFFFFF;
+	
+	-webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.75);
 }
 #header h1{
     font-size: 5.5em;
@@ -69,6 +73,10 @@ body{
   background-color: #314C43;
   padding: 0.5em; 
   font-weight: bold;
+	
+	-webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.75);
 }
 
 /*MENU*/
@@ -86,6 +94,9 @@ body{
 	position: sticky;
 	top: 0;
 	z-index: 1;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.75);
 }
 #menu ul{
   list-style-type: none;
@@ -128,6 +139,10 @@ img#villa{
   padding: 2em 4em;
   font-size: 1em;
   line-height: 1.5em;
+	
+	-webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.75);
 }
 .main p{
   font-size: 1em;
