@@ -39,6 +39,9 @@ img#logo{
 #menu ul li a{
 	padding: 0.2em;
 }
+img.imgDot{
+    width: 10%;
+}
 .main{
 	padding: 1.2em; /*troppo stretto altrimenti, perfetto per il form che non sgrana*/
 }
