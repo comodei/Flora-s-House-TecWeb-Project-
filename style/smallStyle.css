@@ -104,15 +104,6 @@ div.main .slidetext {
 #hiddenMob{
 	display: none;
 }
-p#hiddenScreen{
-	padding-top:0.3em;
-	visibility: visible;
-	text-align: center;
-	font-size: 1em;
-	color: rgba(54,68,64,1.00);
-}
-
-
 
 div.main .slideshow-container{
 	max-width: 100%;

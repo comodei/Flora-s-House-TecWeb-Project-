@@ -79,9 +79,6 @@ div.slidetext{
 a.prev, a.next{
 	display: none;
 }
-p#hiddenScreen{
-  visibility: hidden;
-}
 p.hiddenGalleria{
 	font-size: 1.5em;
 	font-style: italic;

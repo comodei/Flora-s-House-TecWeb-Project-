@@ -535,9 +535,6 @@ div.main .anteprima img::before {
   grid-column-end: 5;
   grid-row-end: 5;
 }
-p#hiddenScreen{
-  visibility: hidden;
-}
 p.hiddenGalleria{
   display: none;
 }
