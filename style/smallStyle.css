@@ -103,6 +103,9 @@ form.book input[type=text], textarea {
 	font-size: 1.2em;
 }
 /*modificato 10/01*/
+.slideshow_wrapper{
+	margin: -0.8em -1.2em 0em;
+}
 div.main .slideshow-container {
     height: 12em;
     width:97%;
