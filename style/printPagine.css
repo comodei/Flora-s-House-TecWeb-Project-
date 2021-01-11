@@ -76,6 +76,9 @@ div.slider a{
 #torna{
 	visibility: hidden;
 }
+#torna1{
+	visibility: hidden;
+}
 div.slidetext{
 	display: none;
 }
