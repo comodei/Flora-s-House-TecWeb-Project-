@@ -43,7 +43,7 @@ body{
     padding-bottom: 2.5em;
 	padding-top: 2em;
     text-align:center;
-	background-color: #3A7F73;
+	background-color: #235B51;
     color: #FFFFFF;
 	
 	-webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.75);
@@ -70,7 +70,9 @@ body{
 /*BREADCRUMB*/
 #breadcrumb{
   color:white;
-  background-color: #314C43;
+  background-color: #195C46;
+  border-bottom: 2px solid #314C43;
+  border-top:2px solid #314C43;
   padding: 0.5em; 
   font-weight: bold;
 	
@@ -85,7 +87,7 @@ body{
   color: white;
   text-align: center;
 	padding: 0.8em 0em;
-  background-color: #37585A;
+  background-color: #314C43;
   font-weight: bold;
 }
 
@@ -103,7 +105,7 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3A7F73;
+  background-color: #235B51;
 }
 #menu ul li{
 	float: left;
@@ -124,6 +126,9 @@ body{
 }
 #menu ul li a:hover:not(.active) {
   background-color: #1B4188;
+}
+#menu ul li a:visited {
+  color: #E6DAC0;
 }
 img#villa{
   display: block;
@@ -185,7 +190,7 @@ img#villa{
     padding-left: 1.5em;
     padding-top:1.8em;
     font-style: italic;
-    background-color: #3A7F73;
+    background-color: #235B51;
 }
 #footer ul li{
   list-style-type: none;
