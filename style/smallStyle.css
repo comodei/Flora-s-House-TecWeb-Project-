@@ -108,13 +108,10 @@ div.main .slideshow-container {
     width:97%;
 }
 div.main .slidetext {
-	font-size: 0.8em;
-	min-height: 2em;
+	display: none;
+
 }
 /*togliere descrizione galleria, toglie troppo spazio*/
-#hiddenMob{
-	display: none;
-}
 
 div.main .slideshow-container{
 	max-width: 100%;
