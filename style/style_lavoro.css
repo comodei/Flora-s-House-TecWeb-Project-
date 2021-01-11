@@ -635,6 +635,9 @@ form.book button:hover,input[type=reset]:hover {
 }
 
 .err ul{
-	padding-left: 1em;
-	margin: 1em 0em;;
+	padding: 1em;
+	margin: 1em 0em;
+	border: 4px solid #3A7F73;
+  border-radius: 10px;
+  margin-bottom: 0.5em;
 }
