@@ -73,6 +73,9 @@ div.slider a{
 	display: none;
 }
 /*Galleria*/
+#torna{
+	visibility: hidden;
+}
 div.slidetext{
 	display: none;
 }

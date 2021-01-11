@@ -368,6 +368,12 @@ ul .nomeCitta{
 }
 
 /* SLIDESHOW */
+#torna{
+  visibility: hidden;
+}
+#torna1{
+  visibility: hidden;
+}
 div.main .slideshow-container {
     max-width: 98%;
     position: relative;

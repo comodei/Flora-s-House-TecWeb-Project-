@@ -93,6 +93,15 @@ form.book input[type=text], textarea {
 #attivita dd img{
 	display: none;
 }
+#torna{
+	visibility: visible;
+	font-size: 1.2em;
+	padding-left: 0.5em;
+}
+#torna1{
+	visibility: visible;
+	font-size: 1.2em;
+}
 /*modificato 10/01*/
 div.main .slideshow-container {
     height: 12em;
@@ -131,11 +140,6 @@ div.main .contenitoreAnteprime{
 
 div.main .anteprima{
 	padding: 0em 0em 0.5em;
-}
-/*aggiunta 10/01*/
-div.main .anteprima img{
-	width:97%;
-	margin-left: 0.5em;
 }
 
 #contattiContainer{
