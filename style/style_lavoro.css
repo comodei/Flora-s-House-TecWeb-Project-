@@ -140,7 +140,7 @@ img#villa{
 
 /*CONTENUTO GENERALE*/
 .main{
-  background-color: #D4F5E7;
+  background-color: whitesmoke;
   padding: 2em 4em;
   font-size: 1em;
   line-height: 1.5em;
@@ -389,6 +389,16 @@ div.main .slideshow-container::after{
 
 #slideshow_home::after{
 	padding-bottom: 42%; /*per la home occupa meno spazio*/
+}
+
+#slideshow_home{
+    display: block;
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+.slideshow_wrapper{
+	margin: -2em -4em 0em;
 }
 
 div.main .mySlides {
