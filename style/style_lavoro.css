@@ -614,3 +614,27 @@ form.book button:hover,input[type=reset]:hover {
   width: 70%;
   margin-top: 0.5em;
 }
+
+.suggerimento p{
+	text-align: right;
+	color: rgba(12,12,12,0.72);
+	padding-right: 12%;
+	font-size: 0.8em;
+}
+
+/*ERRORI PRENOTAZIONI*/
+.err p{
+	color: rgba(144,20,8,0.91);
+	font-size: 0.8em;
+}
+
+.err li{
+	list-style-type: none;
+	color: rgba(144,20,8,0.91);
+	font-size: 0.9em;
+}
+
+.err ul{
+	padding-left: 1em;
+	margin: 1em 0em;;
+}
