@@ -384,7 +384,7 @@ div.main .slideshow-container::after{
 
 
 #slideshow_home::after{
-	padding-bottom: 42%; /*per la home occupa meno spazio*/
+	padding-bottom: 28%; /*per la home occupa meno spazio*/
 }
 
 #slideshow_home{
@@ -441,9 +441,8 @@ div.main .slidetext {
   	text-align: center;  
 	min-height: 2em;
 	background-color: rgba(0,0,0,0.5);
-}
-div.main .hometext{
-	min-height: 2em;
+	
+	display: none; /*il codice c'è per eventuali testi, non essendocene per ora l'elemento è nascosto*/
 }
 div.main .dot {
   cursor: pointer;
@@ -650,4 +649,17 @@ form.book button:hover,input[type=reset]:hover {
 	border: 4px solid #3A7F73;
   border-radius: 10px;
   margin-bottom: 0.5em;
+}
+
+/*la lista errori è nascosta ad un utente vedente*/
+#errori{
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip; rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
