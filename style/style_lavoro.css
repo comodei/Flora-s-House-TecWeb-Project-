@@ -184,17 +184,13 @@ img#villa{
 #footer{
 
     text-align:center;
-	padding-bottom: 2.4em;
-    font-size: 1em;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-    padding-top:1.6em;
-    font-style: italic;
+    font-size: 0.7em;
+	padding:3em 1.5em 2.4em;
     background-color: #235B51;
 }
 #footer ul li{
   list-style-type: none;
-  color: white;
+  color: rgba(255,255,255,0.83);
 	padding-bottom: 0.4em;
 }
 #imgValidCode{
@@ -301,7 +297,7 @@ ul .nomeCitta{
 }
 
 #maps{
-	margin-top: 0.3em;
+	margin-top: 4.5em;
 	margin-bottom: 3em;
 	height: 100%;
 	max-height: 22em;
@@ -630,6 +626,10 @@ form.book button:hover,input[type=reset]:hover {
 	color: rgba(12,12,12,0.72);
 	padding-right: 12%;
 	font-size: 0.8em;
+}
+
+.field_prenotaz{
+	padding: 1.5em 3.3em;
 }
 
 /*ERRORI PRENOTAZIONI*/

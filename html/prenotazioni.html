@@ -44,8 +44,7 @@
     <h2>Prenota il tuo Soggiorno!</h2>
     <form class="book" action="../php/nuovaPrenotazione.php" method="post" title="Form per prenotare" aria-label="Form per prenotare">
 		<messaggi/>
-      <fieldset>
-      <legend>Dati Anagrafici</legend>
+      <fieldset class="field_prenotaz" id="anagrafica">
 		  
         <div class="row">
         <div class="col-25">
@@ -112,8 +111,7 @@
         </div>
       </fieldset>
 
-	  <fieldset>
-    <legend>Date di Soggiorno e Pagamento</legend>
+	  <fieldset class="field_prenotaz" id="pagamento">
       <div class="row">
       <div class="col-25">
 		      <label for="checkin">Data di checkin: *</label>
