@@ -184,7 +184,7 @@ img#villa{
 #footer{
 
     text-align:center;
-    font-size: 0.7em;
+    font-size: 0.8em;
 	padding:3em 1.5em 2.4em;
     background-color: #235B51;
 }
@@ -655,7 +655,6 @@ form.book button:hover,input[type=reset]:hover {
 #errori{
     border: 0;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip; rect(1px, 1px, 1px, 1px);
     height: 1px;
     margin: -1px;
     overflow: hidden;
