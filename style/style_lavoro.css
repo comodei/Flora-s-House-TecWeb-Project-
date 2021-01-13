@@ -65,6 +65,7 @@ body{
 	max-height: 10em;
 	margin-left: 4em;
 	object-fit: contain;
+	cursor: pointer;
 }
 
 /*BREADCRUMB*/
