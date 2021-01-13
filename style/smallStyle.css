@@ -97,10 +97,26 @@ form.book input[type=text], textarea {
 	visibility: visible;
 	font-size: 1.2em;
 	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border:1px solid #235B51;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-left: 0.5em;
+	margin-left: 0.5em;
+	background-color: #235B51;
+	color:white;
 }
 #torna1{
 	visibility: visible;
 	font-size: 1.2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border:1px solid #235B51;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-left: 0.5em;
+	background-color: #235B51;
+	color:white;
 }
 /*modificato 10/01*/
 .slideshow_wrapper{
