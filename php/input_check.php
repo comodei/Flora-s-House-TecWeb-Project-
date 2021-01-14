@@ -52,7 +52,7 @@ class input_check{
 	}
 	public static function check_num($num){
 		
-		if(preg_match('^(\((00|\+)39\)|(00|\+)39)?(38[890]|34[7-90]|36[680]|33[3-90]|32[89])\d{7}$^',$num)==1){
+		if(preg_match('"^(([+]|00)39)?((3[1-6][0-9]))(\d{7})$^"',$num)==1){
             return true;
         }
        return false;

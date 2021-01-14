@@ -45,11 +45,15 @@ if(isset($_POST['submit'])){
 		if(!input_check::cf_check($cliente->getCF())){
 		
 			
-			$messaggioPerForm.='<div class="err"><p>Inserisci un codice fiscale valido</p></div>';
+		$messaggioPerForm.='<div class="err"><p>Inserisci un codice fiscale valido</p></div>';
 		}
 		if(!input_check::check_email($cliente->getEmail())){
 		
 			$messaggioPerForm.='<div class="err"><p>Inserisci una mail valida</p></div>';
+		}
+		if(!input_check::check_num($cliente->getCell())){
+		
+			$messaggioPerForm.='<div class="err"><p>Inserisci un numero di telefono valido</p></div>';
 		}
 		if(!input_check::check_card($cliente->getCarta())){
 		
