@@ -17,7 +17,7 @@ class prenotazione{
     }
 
     public function isCorrect(){
-		if(input_check::date_check($this->check_in) && input_check::date_check($this->check_out) && input_check::check_desc($this->richieste)){
+		if(input_check::date_check($this->check_in) && input_check::date_check($this->check_out)){
 			if ( $this->check_in < $this->check_out){
 				return true;
 			} 
@@ -51,3 +51,4 @@ class prenotazione{
 
 
 }
+?>
