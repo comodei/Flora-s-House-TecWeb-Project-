@@ -639,29 +639,24 @@ form.book button:hover,input[type=reset]:hover {
 }
 
 /*ERRORI PRENOTAZIONI*/
-.err p{
-	color: rgba(144,20,8,0.91);
-	font-size: 0.8em;
-}
-
 .err li{
 	list-style-type: none;
 	color: rgba(144,20,8,0.91);
-	font-size: 0.9em;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .err ul{
 	padding: 1em;
 	margin: 1em 0em;
 	border: 4px solid #3A7F73;
-  border-radius: 10px;
-  margin-bottom: 0.5em;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
 }
-
-/*la lista errori è nascosta ad un utente vedente*/
+/* 
 #errori{
     border: 0;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -669,3 +664,4 @@ form.book button:hover,input[type=reset]:hover {
     position: absolute;
     width: 1px;
 }
+*/

@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
     
    
     
-	if ($prenotazione->isCorrect() && $cliente->isCorrect){
+	if ($prenotazione->isCorrect() && $cliente->isCorrect()){
 		$connessione = new connection();
 		if($connessione->isConnected()){
 			$result_cliente = $cliente->inserisciCliente($connessione);
@@ -36,44 +36,44 @@ if(isset($_POST['submit'])){
 		$messaggioPerForm = '<div id="errori" class="err"><ul>';
 		if(!input_check::check_nome($cliente->getNome())){
 			
-			$messaggioPerForm.='<div class="err"><p>Inserisci un nome valido</p></div>';
+			$messaggioPerForm.='<li>Inserisci un nome valido</li>';
 		}
 		if(!input_check::check_nome($cliente->getCognome())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci un cognome valido</p></div>';
+			$messaggioPerForm.='<li>Inserisci un cognome valido</li>';
 		}
 		if(!input_check::cf_check($cliente->getCF())){
 		
 			
-		$messaggioPerForm.='<div class="err"><p>Inserisci un codice fiscale valido</p></div>';
+		$messaggioPerForm.='<li>Inserisci un codice fiscale valido</li>';
 		}
 		if(!input_check::check_email($cliente->getEmail())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci una mail valida</p></div>';
+			$messaggioPerForm.='<li>Inserisci una mail valida</li>';
 		}
 		if(!input_check::check_num($cliente->getCell())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci un numero di telefono valido</p></div>';
+			$messaggioPerForm.='<li>Inserisci un numero di telefono valido</li>';
 		}
 		if(!input_check::check_card($cliente->getCarta())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci una carta di credito valida</p></div>';
+			$messaggioPerForm.='<li>Inserisci una carta di credito valida</li>';
 		}
 		if(!input_check::date_check($cliente->getNascita())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci una data di nascita valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</p></div>';
+			$messaggioPerForm.='<li>Inserisci una data di nascita valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</li>';
 		}
 		if(!input_check::date_check($prenotazione->getCheckin())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci una data di check-in valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</p></div>';
+			$messaggioPerForm.='<li>Inserisci una data di check-in valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</li>';
 		}
 		if(!input_check::date_check($prenotazione->getCheckout())){
 		
-			$messaggioPerForm.='<div class="err"><p>Inserisci una data di check-out valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</p></div>';
+			$messaggioPerForm.='<li>Inserisci una data di check-out valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</li>';
 		}
 		if($prenotazione->getCheckin() > $prenotazione->getCheckout()){
 		
-			$messaggioPerForm.='<div class="err"><p>La data di check in non può essere dopo la data di check out</p></div>';
+			$messaggioPerForm.='<li>La data di check in non può essere dopo la data di check out</li>';
 		}
 		
 		
