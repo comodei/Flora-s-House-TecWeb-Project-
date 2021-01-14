@@ -41,11 +41,10 @@ if(isset($_POST['submit'])){
 		if(!input_check::check_nome($cliente->getCognome())){
 		
 			$messaggioPerForm.='<li>Inserisci un cognome valido</li>';
+
 		}
-		if(!input_check::cf_check($cliente->getCF())){
-		
-			
-		$messaggioPerForm.='<li>Inserisci un codice fiscale valido</li>';
+		if(!input_check::cf_check($cliente->getCF())){	
+		    $messaggioPerForm.='<li>Inserisci un codice fiscale valido</li>';
 		}
 		if(!input_check::check_email($cliente->getEmail())){
 		
