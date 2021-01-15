@@ -51,6 +51,31 @@
                 return null;
             }
         }
+		
+		 public function getListPrenotazioni(){
+            $querySelect = "SELECT * FROM Prenotazione ORDER BY DataCheckIn ASC";
+            $queryResult = mysqli_query($this->connection, $querySelect);
+
+            if(mysqli_num_rows($queryResult)!=0){
+                
+                $listPrenotazioni = array();
+                while($row = mysqli_fetch_assoc($queryResult)){
+                    $prenotazione = array(
+					    "Codice" => $row['Codice'],
+                        "DataCheckIn" => $row['DataCheckIn'],
+                        "DataCheckOut" => $row['DataCheckOut'],
+                        "Richieste" => $row['Richieste'],
+                    );
+
+                    array_push($listPrenotazioni, $prenotazione);
+                }
+
+                return $listPrenotazioni;
+            }
+            else{
+                return null;
+            }
+        }
 
     }
 
