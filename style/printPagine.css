@@ -17,6 +17,9 @@ html,body{
 a.aiutiNascosti{
 	display: none;
 }
+a[title="Vai alla pagina home"]{
+	display: none;
+}
 #logo{
 	display: none;
 }
