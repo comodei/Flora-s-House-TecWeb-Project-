@@ -611,7 +611,9 @@ form.book button, input[type=reset]{
   cursor: pointer;
   float: left;
 }
-
+div#login_main form.book button{
+  float:none;
+}
 form.book button:hover,input[type=reset]:hover {
   background-color: #1B4188;
 }
