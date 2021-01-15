@@ -1,4 +1,5 @@
 <?php
+
 require_once "connection.php";
 require_once "input_check.php";
 
