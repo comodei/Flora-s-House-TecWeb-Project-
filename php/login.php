@@ -3,7 +3,7 @@
     require_once "connection.php";
 
     if($_SESSION['connesso']==true){
-        header('location:gest_prenotazioni.php');
+        header('location:gestPrenotazioni.php');
         exit();
     }
 
@@ -31,16 +31,18 @@
 
         if(mysqli_affected_rows($connessione->getConnection())==1){
             $_SESSION['connesso'] = true;
-            $SESSION['utente'] = $utente;
+            $_SESSION['utente'] = $utente;
 
             $connessione->closeConnection();
 
-            header('location:gest_prenotazioni.php');
+            header('location:gestPrenotazioni.php');
             exit;
         }
-        else{
-            $error.='<li>Credenziali errate</li>';
+        else if  ($_SERVER['REQUEST_METHOD'] === 'POST') {
+			 $error.='<li>Credenziali errate</li>';
         }
+           
+        
     }
     else{
         $error.='<li>Connessione con il database non riuscita</li>';

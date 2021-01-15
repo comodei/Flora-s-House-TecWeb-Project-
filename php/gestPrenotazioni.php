@@ -1,7 +1,16 @@
 <?php
     require_once "connection.php";
+	require_once "session.php";
+	
+	 if($_SESSION['connesso']!=true){
+        header('location:accessdenied.php');
+        exit();
+    }
+	
+	
     $connessione = new connection();
     $paginaHTML = file_get_contents("..". DIRECTORY_SEPARATOR . "html". DIRECTORY_SEPARATOR ."gestPrenotazioni.html");
+
     if($connessione->isConnected()){
         
         $listaPrenotazioni = $connessione->getListPrenotazioni();
