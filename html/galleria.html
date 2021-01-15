@@ -38,7 +38,7 @@
     <ul>
         <li><a href="base.html" title="Vai alla pagina home" aria-label="Vai alla pagina home">Home</a></li>
         <li class="currentLink">Galleria</li>
-        <li><a href="prenotazioni.html" title="Vai alla pagina prenotazioni" aria-label="Vai alla pagina prenotazioni">Prenotazioni</a></li>
+        <li><a href="prenotazioni.html" title="Vai alla pagina prenotazioni" aria-label="Vai alla pagina prenotazioni">Prenota</a></li>
         <li><a href="../php/dintorni.php" title="Vai alla pagina dintorni" aria-label="Vai alla pagina dintorni">Dintorni</a></li>
         <li class="endMenu"><a href="contatti.html" title="Vai alla pagina contatti" aria-label="Vai alla pagina contatti">Contatti</a></li>
     </ul>
@@ -47,6 +47,7 @@
   <p class="hiddenGalleria">Per poter visualizzare le immagini della 
   Galleria accedi da un dispositivo!</p>
 	<!-- Slideshow container -->
+	<div id="galleriaSlidePunti">
   <div class="slideshow-container" role="img">
 
       <div class="mySlides fade">
@@ -108,9 +109,10 @@
 		    <span id="dot8" class="dot"></span>
 		    <span id="dot9" class="dot"></span>
 		    <span id="dot10" class="dot"></span>
-</div>
+	</div>
+	</div>
 	<!-- Galleria anteprime -->
-<div class="galleria">
+<div class="galleria" id="galleriaAnteprime">
 <div class="contenitoreAnteprime" role="img">
 	<div class="anteprima" id="anteprima1">
           <img src="../images/sample_hd_jpg.jpg" alt="Immagine che raffigura la Villa. Si vede la casa di colore rosso a destra e giallo a sinistra. E' possibile vedere anche la piscina e il giardino con gli ulivi e gli sdrai per prendere il sole."/>

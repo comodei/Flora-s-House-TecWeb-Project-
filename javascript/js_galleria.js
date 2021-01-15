@@ -1,6 +1,6 @@
 var slideIndex = 1;
 showSlides(slideIndex);
-window.onload = scorriLink(); slide();
+window.onload = scorriLink(); slide(); hideGalleria();
 function slide(){
   var links = document.getElementsByTagName("span");
   for (var i=0; i<links.length; i++) {
@@ -154,3 +154,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+//SE JAVASCRIPT è DISABILITATO VISUALIZZA LE IMMAGINI UNA DOPO L'ALTRA, ALTRIMENTI VISUALIZZA SOLO LO SLIDESHOW
+function hideGalleria() {
+	const mediaQuery = window.matchMedia("handheld, screen and (max-width:640px), only screen and (max-device-width:640px)")
+	
+	if (mediaQuery.matches) {
+		document.getElementById("galleriaAnteprime").style.display = 'none';
+		document.getElementById("galleriaSlidePunti").style.display = 'block';
+	}
+}
