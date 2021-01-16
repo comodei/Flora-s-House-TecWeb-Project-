@@ -35,6 +35,7 @@
                 $listAttivita = array();
                 while($row = mysqli_fetch_assoc($queryResult)){
                     $attivita = array(
+                        "Codice" => $row['Codice'],
                         "Titolo" => $row['Titolo'],
                         "Descrizione" => $row['Descrizione'],
                         "AltImmagine" => $row['AltImmagine'],
