@@ -2,7 +2,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 window.onload = scorriLink(); slide(); hideGalleria();
 function slide(){
-  var links = document.getElementsByTagName("span");
+  const links = Array.from(document.getElementsByTagName("span"));
   for (var i=0; i<links.length; i++) {
   if (links[i].getAttribute("id") == "dot1") {
     links[i].onclick = function() {
@@ -57,7 +57,7 @@ function slide(){
   }
 	
 	
-	var links_preview = document.getElementsByClassName("anteprima");
+	const links_preview = Array.from(document.getElementsByClassName("anteprima"));
 	for (i=0; i<links_preview.length; i++) {
   if (links_preview[i].getAttribute("id") == "anteprima1") {
     links_preview[i].onclick = function() {
@@ -113,8 +113,8 @@ function slide(){
 }
 }
 function scorriLink(){
-var links = document.getElementsByTagName("a");
-for (var i=0; i<links.length; i++) {
+const links = Array.from(document.getElementsByTagName("a"));
+for (var i=0; i<links.length; ++i) {
   if (links[i].getAttribute("class") == "next") {
     links[i].onclick = function() {
       plusSlides(+1);
@@ -140,8 +140,8 @@ function currentSlide(n) {
 }
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  const slides = Array.from(document.getElementsByClassName("mySlides"));
+  const dots = Array.from(document.getElementsByClassName("dot"));
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
