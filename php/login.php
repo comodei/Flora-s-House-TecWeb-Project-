@@ -11,45 +11,47 @@
 
     $utente = "";
     $password = "";
+	if  ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		if(isset($_POST['utente'])){
+			$utente=$_POST['utente'];
+		}
+		if(isset($_POST['password'])){
+			$password=$_POST['password'];
+		}
 
-    if(isset($_POST['utente'])){
-        $utente=$_POST['utente'];
-    }
-    if(isset($_POST['password'])){
-        $password=$_POST['password'];
-    }
+		$connessione = new connection();
+		$error = '<div class="err"><ul>';
 
-    $connessione = new connection();
-    $error = '<div class="err"><ul>';
-
-    if($connessione->isConnected()){
+		if($connessione->isConnected()){
         
         //CONTROLLI UTENTE E PASSWORD
 
-        $query = "SELECT Utente FROM admin WHERE Utente=\"$utente\" AND Password=\"$password\"";
-        $queryResult = mysqli_query($connessione->getConnection(), $query);
+			$query = "SELECT Utente FROM admin WHERE Utente=\"$utente\" AND Password=\"$password\"";
+			$queryResult = mysqli_query($connessione->getConnection(), $query);
 
-        if(mysqli_affected_rows($connessione->getConnection())==1){
-            $_SESSION['connesso'] = true;
-            $_SESSION['utente'] = $utente;
+			if(mysqli_affected_rows($connessione->getConnection())==1){
+				$_SESSION['connesso'] = true;
+				$_SESSION['utente'] = $utente;
 
-            $connessione->closeConnection();
+				$connessione->closeConnection();
 
-            header('location:gestPrenotazioni.php');
-            exit;
-        }
-        else if  ($_SERVER['REQUEST_METHOD'] === 'POST') {
-			 $error.='<li>Credenziali errate</li>';
-        }
-           
-        
-    }
-    else{
-        $error.='<li>Connessione con il database non riuscita</li>';
-    }
-    $error.='</ul></div>';
-    $paginaHTML = str_replace('<messaggi/>', $error, $paginaHTML);
-    echo $paginaHTML;
+				header('location:gestPrenotazioni.php');
+				exit;
+			}
+			else {
+				 $error.='<li>Credenziali errate</li>';
+			}
+			   
+			
+		}
+		else{
+			$error.='<li>Connessione con il database non riuscita</li>';
+		}
+		$error.='</ul></div>';
+	
+		$paginaHTML = str_replace('<messaggi/>', $error, $paginaHTML);
+	}
+		echo $paginaHTML;
 
 
 
