@@ -132,7 +132,7 @@ div.main .slideshow-container{
 }
 
 #galleriaSlidePunti{
-	display: none;
+	/*display: none;*/
 	padding: 2em 0em;
 }
 
@@ -140,6 +140,10 @@ div.main .slideshow-container{
 	padding: 0em;
 	background-color: rgba(2,21,19,1.00);
 	
+}
+
+#galleriaAnteprime{
+	display: none;
 }
 
 div.main .galleria{
