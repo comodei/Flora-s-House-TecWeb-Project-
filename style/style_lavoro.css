@@ -609,7 +609,7 @@ form.book label{
   padding: 0.2em 0.2em 0.2em 0;
   display: inline-block;
 }
-form.book input[type=text], textarea {
+form.book input[type=text], textarea, input[type=password] {
   width: 80%;
   padding: 0.8em;
   border: 1px solid #ccc;
