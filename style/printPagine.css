@@ -92,3 +92,23 @@ p.hiddenGalleria{
 	font-size: 1.5em;
 	font-style: italic;
 }
+/*pagina 404*/
+.main h1.titolo_404{
+	padding-bottom: 1em;
+}
+.main p.sottotitolo_404{
+    font-size: 1.5em;   
+}
+.main p.sottotitolo_404 a{
+	display: none;
+}
+/*access denied*/
+.main h1.titolo_access_denied{
+	padding-bottom: 1em;
+}
+.main p.access_denied{
+    font-size: 1.5em;   
+}
+.main p.access_denied a{
+	display: none;
+}

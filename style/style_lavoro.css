@@ -348,9 +348,27 @@ ul .nomeCitta{
 #raggiungiCitta{
 	grid-area: 3 / 1 / span 1 / span 5;
 }
-
+/*ACCESS DENIED*/
+h1.titolo_access_denied{
+  font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em; 
+}
+p.access_denied{
+  font-size: 1.5em;   
+    text-align: center; 
+    width: 60%; 
+    float: left;  
+    margin: 8% 2em 2em 2em; 
+}
+.main img.err_acc{
+  width: 28%;
+    height: auto; 
+    padding-top: 1em;
+}
 /*PAGINA 404*/
-.main p.titolo_404{
+.main h1.titolo_404{
     font-size: 2em;
     font-weight: bold;
     text-align: center;

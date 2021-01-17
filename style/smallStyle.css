@@ -188,3 +188,29 @@ div.main .anteprima{
 .field_prenotaz{
 	padding: 0em;
 }
+/*pagina access denied*/
+h1.titolo_access_denied{
+  font-size: 1.2em;
+}
+p.access_denied{
+  	font-size: 1em;
+	 width: 100%;
+	 margin:0em;
+}
+.main img.err_acc{
+  	width: 70%;
+  	margin-left: 2.5em;
+}
+/*Pagina 404*/
+.main h1.titolo_404{
+	font-size: 1.2em;
+}
+.main p.sottotitolo_404{
+	 font-size: 1em;
+	 width: 100%;
+	 margin:0em;
+}
+.main img.img_404{
+    width: 70%;
+    margin-left: 2.5em;
+}
