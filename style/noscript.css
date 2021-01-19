@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#galleriaAnteprime{
+	display: block;
+}
+
+#galleriaSlidePunti{
+	display: none;
+}
+
+#slideshow_home{
+	display: none;
+}
+
+div.main .mySlides{
+	display: block;
+	
+}
+
+div.main .mySlides img{
+    position: relative;
+}
+
+.punti{
+	display: none;
+}

@@ -155,11 +155,11 @@ function showSlides(n) {
 }
 
 //SE JAVASCRIPT è DISABILITATO VISUALIZZA LE IMMAGINI UNA DOPO L'ALTRA, ALTRIMENTI VISUALIZZA SOLO LO SLIDESHOW
-function hideGalleria() {
+/*function hideGalleria() {
 	const mediaQuery = window.matchMedia("handheld, screen and (max-width:640px), only screen and (max-device-width:640px)")
 	
 	if (mediaQuery.matches) {
 		document.getElementById("galleriaAnteprime").style.display = 'none';
 		document.getElementById("galleriaSlidePunti").style.display = 'block';
 	}
-}
+}*/
