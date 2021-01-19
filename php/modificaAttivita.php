@@ -46,7 +46,7 @@
             
             if(isset($_POST['submitDel'])){
 
-                $query = "DELETE FROM Attivita WHERE Codice = \"$codice\"";
+                $query = "DELETE FROM attivita WHERE Codice = \"$codice\"";
                 $queryResult = mysqli_query($connessione->getConnection(), $query);
 
                 if(mysqli_affected_rows($connessione->getConnection())==1){
@@ -66,7 +66,7 @@
 
             else{
                 
-                $query = "UPDATE Attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
+                $query = "UPDATE attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
                     Link=\"$link\", AltImmagine=\"$altimmagine\", Immagine=\"$immagine\" WHERE Codice=\"$codice\"";
                 $queryResult = mysqli_query($connessione->getConnection(), $query);
                 if(mysqli_affected_rows($connessione->getConnection())>=1){

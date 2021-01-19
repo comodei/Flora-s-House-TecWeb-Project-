@@ -27,9 +27,9 @@
         }
 
         public function getListAttivita(){
-            $querySelect = "SELECT * FROM Attivita ORDER BY Codice ASC";
+            $querySelect = "SELECT * FROM attivita ORDER BY Codice ASC";
             $queryResult = mysqli_query($this->connection, $querySelect);
-
+            
             if(mysqli_num_rows($queryResult)!=0){
                 
                 $listAttivita = array();
@@ -54,7 +54,7 @@
         }
 		
 		 public function getListPrenotazioni(){
-            $querySelect = "SELECT * FROM Prenotazione ORDER BY DataCheckIn ASC";
+            $querySelect = "SELECT * FROM prenotazione ORDER BY DataCheckIn ASC";
             $queryResult = mysqli_query($this->connection, $querySelect);
 
             if(mysqli_num_rows($queryResult)!=0){
