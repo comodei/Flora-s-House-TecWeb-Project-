@@ -51,11 +51,15 @@
 
                 if(mysqli_affected_rows($connessione->getConnection())==1){
                     $connessione->closeConnection();
-                    header('location:gestAttivita.php');
-                    exit;
+                    echo "<div class='mess'>Attivita eliminata con successo</div>";
+					header( "refresh:5;url=gestAttivita.php" );
+					exit;
+                    
                 }
                 else{
-                    //gestione degli errori
+                    echo "<div class='err'>Errore eliminazione attivita</div>";
+					header( "refresh:5;url=gestAttivita.php" );
+					exit;
                 }
 
             }
@@ -65,20 +69,28 @@
                 $query = "UPDATE Attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
                     Link=\"$link\", AltImmagine=\"$altimmagine\", Immagine=\"$immagine\" WHERE Codice=\"$codice\"";
                 $queryResult = mysqli_query($connessione->getConnection(), $query);
-                echo mysqli_affected_rows($connessione->getConnection());
-                if(mysqli_affected_rows($connessione->getConnection())==1){
+                if(mysqli_affected_rows($connessione->getConnection())>=1){
                     $connessione->closeConnection();
-                    header('location:gestAttivita.php');
-                    exit;
+                    echo "<div class='mess'>Attivita aggiornata con successo</div>";
+					header( "refresh:5;url=gestAttivita.php" );
+					exit;
                 }
                 else{
-                    //gestione degli errori
+                     echo "<div class='err'>Errore aggiornamento attivita</div>";
+					header( "refresh:5;url=gestAttivita.php" );
+					exit;
                 }
 
             }
-        }
-    }
-
+        } else {
+			echo "<div class='mess'> Errore nell'instaurazione della connessione</div>";
+			header( "refresh:5;url=gestAttivita.php" );
+			exit;
+		}
+    } else {
+		header('location:gestAttivita.php');
+		exit;
+	}
 
 
 ?>

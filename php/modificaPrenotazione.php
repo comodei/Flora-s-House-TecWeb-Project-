@@ -34,11 +34,13 @@
 			 $queryResult = mysqli_query($connessione->getConnection(), $query);
 			 if(mysqli_affected_rows($connessione->getConnection())>=1){
 					$connessione->closeConnection();
-					header('location:gestPrenotazioni.php');
+					echo "<div class='mess'>Prenotazione eliminata con successo</div>";
+					header( "refresh:5;url=gestPrenotazioni.php" );
 					exit;
 				} else {
-					// Gestione degli errori da decidere.
-						
+					echo "<div class='err'>Errore nella rimozione della prenotazione </div>";
+					header( "refresh:5;url=gestPrenotazioni.php" );
+					exit;
 				}
 			
 			 
@@ -48,31 +50,29 @@
 				$queryResult = mysqli_query($connessione->getConnection(), $query);
 				if(mysqli_affected_rows($connessione->getConnection())>=1){
 					$connessione->closeConnection();
-					header('location:gestPrenotazioni.php');
+					echo "<div class='mess'>Prenotazione aggiornata con successo</div>";
+					header( "refresh:5;url=gestPrenotazioni.php" );
 					exit;
 				}
 				else {
-					// $error.='<li>Credenziali errate</li>';
-					echo "CIAO";
-					echo mysqli_affected_rows($connessione->getConnection());
+					echo "<div class='err'>Errore nell'aggiornamento della prenotazione </div>";
+					header( "refresh:5;url=gestPrenotazioni.php" );
+					exit;
 				}
-				   
-				
-			}
-			//$error.='<li>Connessione con il database non riuscita</li>';
+				   	
+			}	
 			
-			}
-		//	$error.='</ul></div>';
+			
+		} else{
+		echo "<div class='mess'> Errore nell'instaurazione della connessione</div>";
+		header( "refresh:5;url=gestPrenotazioni.php" );
+		exit;
+		}
 		
-		//	$paginaHTML = str_replace('<messaggi/>', $error, $paginaHTML);
-		
+	} else {
+		header('location:gestPrenotazioni.php');
+		exit;
 	}
 			
-
-
-
-
-
-
 
 ?>
