@@ -46,7 +46,7 @@ INSERT INTO `admin` (`Utente`, `Password`) VALUES
 --
 
 CREATE TABLE `attivita` (
-  `Codice` int(11) NOT NULL,
+  `Codice` int(11) NOT NULL AUTO_INCREMENT,
   `Titolo` varchar(80) NOT NULL,
   `Descrizione` varchar(1024) NOT NULL,
   `Link` varchar(80) DEFAULT NULL,
@@ -102,7 +102,7 @@ INSERT INTO `cliente` (`CodiceFiscale`, `Nome`, `Cognome`, `Cellulare`, `Email`,
 --
 
 CREATE TABLE `prenotazione` (
-  `Codice` int(11) NOT NULL,
+  `Codice` int(11) NOT NULL AUTO_INCREMENT,
   `DataCheckIn` date NOT NULL,
   `DataCheckOut` date NOT NULL,
   `Richieste` varchar(600) DEFAULT NULL,

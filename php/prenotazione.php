@@ -28,7 +28,7 @@ class prenotazione{
 
     public function inserisciPrenotazione(connection $db){
         
-        $query = "INSERT INTO Prenotazione(DataCheckIn,DataCheckOut,Richieste,CodiceFiscale)
+        $query = "INSERT INTO prenotazione(DataCheckIn,DataCheckOut,Richieste,CodiceFiscale)
             VALUES (\"$this->check_in\",\"$this->check_out\",\"$this->richieste\",\"$this->cf\")";
         
         $queryResult = mysqli_query($db->getConnection(),$query);

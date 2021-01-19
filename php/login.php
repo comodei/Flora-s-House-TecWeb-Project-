@@ -26,7 +26,7 @@
         
         //CONTROLLI UTENTE E PASSWORD
 
-			$query = "SELECT Utente FROM admin WHERE Utente=\"$utente\" AND Password=\"$password\"";
+			$query = "SELECT utente FROM admin WHERE Utente=\"$utente\" AND Password=\"$password\"";
 			$queryResult = mysqli_query($connessione->getConnection(), $query);
 
 			if(mysqli_affected_rows($connessione->getConnection())==1){
