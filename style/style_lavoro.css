@@ -131,13 +131,6 @@ body{
 #menu ul li a:visited {
   color: #E6DAC0;
 }
-img#villa{
-  display: block;
-  margin: auto;
-  width: 75%;
-  border-radius: 20px;
-  padding-bottom: 0.5em;
-}
 
 /*CONTENUTO GENERALE*/
 .main{
@@ -172,13 +165,6 @@ img#villa{
 }
 .main dt{
 	color: rgba(42,61,54,1.00);
-}
-.bord{
-    padding: 0.4em;
-    border: 1px solid black;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #0610C9, #24325F);
-    color:white;
 }
 
 /*FORMATTAZIONE TESTO HOME*/
