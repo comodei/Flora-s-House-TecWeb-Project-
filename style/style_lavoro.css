@@ -756,5 +756,5 @@ form.book button:hover,input[type=reset]:hover {
 }
 
 input[type="date"]{
-	max-width: 10em;
+	max-width: 12em;
 }
