@@ -156,7 +156,7 @@ body{
     font-size: 1.7em;
 	font-family: titleFont,"Arial",cursive,Sans-serif;
 }
-.main h2{ /*essenzialmente pagina contatti*/
+.main h2{ 
 	color: rgba(42,61,54,1.00);
     font-size: 2em;
     padding-top:0.3em;
@@ -674,3 +674,86 @@ form.book button:hover,input[type=reset]:hover {
     width: 1px;
 }
 */
+
+
+/*DA QUI IN POI LE AGGIUNTE RECENTI AL CSS PRENOTAZIONI*/
+.fieldset_prenotaz{
+	padding: 2.7em 3.3em;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	column-gap: 0em;
+	row-gap: 1.6em;
+	
+}
+
+
+.campo_prenotazione{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#insNome {
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#insCgnm {
+		grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#insCF {
+		grid-area: 3 / 1 / span 1 / span 1;
+}
+
+#dataN {
+		grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#insCell {
+		grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#insEmail {
+		grid-area: 3 / 2 / span 1 / span 1;
+}
+
+
+#insCC {
+	grid-area: 1 / 1 / span 1 / span 2;
+}
+
+#dataChkIn {
+	grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#dataChkOut {
+	grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#richieste {
+	grid-area: 3 / 1 / span 2 / span 2;
+	display: block;
+	
+}
+
+
+.suggerimento{
+	grid-area: 5 / 1 / span 1 / span 2;
+}
+
+
+.tag{
+	flex-grow: 1;
+	max-width: 15em;
+	min-width: 10em;
+}
+
+
+.field{
+	flex-grow: 1;
+}
+
+.obbligatorio .tag label::before{
+	content:'* ';
+	color: rgba(176,29,31,0.90);
+}

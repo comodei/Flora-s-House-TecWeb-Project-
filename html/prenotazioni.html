@@ -44,110 +44,109 @@
     <h2>Prenota il tuo Soggiorno!</h2>
     <messaggi/>
     <form class="book" action="../php/nuovaPrenotazione.php" method="post" title="Form per prenotare" aria-label="Form per prenotare">
-      <fieldset class="field_prenotaz" id="anagrafica">
+      <fieldset class="fieldset_prenotaz" id="anagrafica">
 		  
-        <div class="row">
-        <div class="col-25">
-          <label for="nome">Nome: * </label>
+        <div class="campo_prenotazione obbligatorio" id="insNome">
+        <div class="tag">
+          <label for="nome">Nome:</label>
         </div>
-        <div class="col-75">
-          <input type="text" id="nome" name="nome" aria-required="true" aria-label="Inserisci il tuo nome" title="Inserisci il tuo nome"/><br/>
+        <div class="field">
+          <input type="text" id="nome" name="nome" aria-required="true" aria-label="Inserisci il tuo nome" title="Inserisci il tuo nome" required/>
 			<errnome/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-          <label for="cognome">Cognome: * </label>
+        <div class="campo_prenotazione obbligatorio" id="insCgnm">
+        <div class="tag">
+          <label for="cognome">Cognome:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="cognome" id="cognome" aria-required="true" aria-label="Inserisci il tuo cognome" title="Inserisci il tuo cognome"/><br/>
+        <div class="field">
+          <input type="text" name="cognome" id="cognome" aria-required="true" aria-label="Inserisci il tuo cognome" title="Inserisci il tuo cognome" required/>
 			<errcgnm/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-          <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.*</abbr>: </label>
+        <div class="campo_prenotazione obbligatorio" id="insCF">
+        <div class="tag">
+          <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.</abbr>:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="codiceFiscale" id="codiceFiscale" aria-required="true" aria-label="Inserisci il tuo codice fiscale" title="Inserisci il tuo codice fiscale"/><br/>
+        <div class="field">
+          <input type="text" name="codiceFiscale" id="codiceFiscale" aria-required="true" aria-label="Inserisci il tuo codice fiscale" title="Inserisci il tuo codice fiscale" required/>
 			<errcf/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-		      <label for="nascita">Data di nascita: *</label>
+        <div class="campo_prenotazione obbligatorio" id="dataN">
+        <div class="tag">
+		      <label for="nascita">Data di nascita:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="nascita" id="nascita" aria-required="true" aria-label="Inserisci la tua data di nascita nel formato GG-MM-AAAA" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG"/><br/>
+        <div class="field">
+          <input type="date" name="nascita" id="nascita" aria-required="true" aria-label="Inserisci la tua data di nascita nel formato GG-MM-AAAA" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG" required/>
 			<errnascita/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-          <label for="cellulare">Cellulare: *</label>
+        <div class="campo_prenotazione obbligatorio" id="insCell">
+        <div class="tag">
+          <label for="cellulare">Cellulare:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="cellulare" id="cellulare" aria-required="true" aria-label="Inserisci il tuo numero di cellulare" title="Inserisci il tuo numero di cellulare"/><br/>
+        <div class="field">
+          <input type="text" name="cellulare" id="cellulare" aria-required="true" aria-label="Inserisci il tuo numero di cellulare" title="Inserisci il tuo numero di cellulare" required/>
 			<errcell/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-          <label for="email">Email: *</label>
+        <div class="campo_prenotazione obbligatorio" id="insEmail">
+        <div class="tag">
+          <label for="email">Email:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="email" id="email" aria-required="true" aria-label="Inserisci la tua email" title="Inserisci la tua email"/><br/>
+        <div class="field">
+          <input type="text" name="email" id="email" aria-required="true" aria-label="Inserisci la tua email" title="Inserisci la tua email" required/>
 			<errmail/>
         </div>
         </div>
-        <div class="row">
-        <div class="col-25">
-		      <label for="carta">Carta di Credito / Prepagata: *</label>
+        
+      </fieldset>
+
+	  <fieldset class="fieldset_prenotaz" id="pagamento">
+		  <div class="campo_prenotazione obbligatorio" id="insCC">
+        <div class="tag">
+		      <label for="carta">Carta di Credito / Prepagata:</label>
         </div>
-        <div class="col-75">
-          <input type="text" name="carta" id="carta" aria-required="true" aria-label="Inserisci le 16 cifre della tua carta di credito" title="Inserisci le 16 cifre della tua carta di credito"/><br/>
+        <div class="field">
+          <input type="text" name="carta" id="carta" aria-required="true" aria-label="Inserisci le 16 cifre della tua carta di credito" title="Inserisci le 16 cifre della tua carta di credito" required/>
 			<errcarta/>
         </div>
         </div>
-      </fieldset>
-
-	  <fieldset class="field_prenotaz" id="pagamento">
-      <div class="row">
-      <div class="col-25">
-		      <label for="checkin">Data di checkin: *</label>
+		  
+      <div class="campo_prenotazione obbligatorio" id="dataChkIn">
+      <div class="tag">
+		      <label for="checkin">Data di check-in:</label>
       </div>
-      <div class="col-75">
-          <input type="text" name="checkin" id="checkin" aria-required="true" aria-label="Inserisci la data del checkin nel formato AAAA-MM-GG" title="Inserisci la data del checkin nel formato AAAA-MM-GG"/><br/>
+      <div class="field">
+          <input type="date" name="checkin" id="checkin" aria-required="true" aria-label="Inserisci la data del checkin nel formato AAAA-MM-GG" title="Inserisci la data del checkin nel formato AAAA-MM-GG" required/>
 		  <errckin/>
       </div>
       </div>
-      <div class="row">
-      <div class="col-25">
-		      <label for="checkout">Data di checkout: *</label>
+      <div class="campo_prenotazione obbligatorio" id="dataChkOut">
+      <div class="tag">
+		      <label for="checkout">Data di check-out:</label>
       </div>
-      <div class="col-75">
-        <input type="text" name="checkout" id="checkout" aria-required="true" aria-label="Inserisci la data del checkout nel formato AAAA-MM-GG" title="Inserisci la data del checkout nel formato AAAA-MM-GG"/><br/>
-		  <errckout/><br/>
+      <div class="field">
+        <input type="date" name="checkout" id="checkout" aria-required="true" aria-label="Inserisci la data del checkout nel formato AAAA-MM-GG" title="Inserisci la data del checkout nel formato AAAA-MM-GG" require/>
+		  <errckout/>
 		  <errdate/>
       </div>
       </div>	
-      <div class="row">	
-      <div class="col-25">
+      <div class="campo_prenotazione" id="richieste">	
+      <div class="tag">
         <label for="descrizione">Richieste Particolari: </label>
       </div>
-      <div class="col-75">
+      <div class="field">
         <textarea id="descrizione" name="descrizione" rows="10" cols="50" title="Scrivi qui per richieste particolari" aria-label="Scrivi qui per richieste particolari"></textarea>
       </div>
       </div>
 		  <div class="suggerimento"><p>*i campi segnati dall'asterisco sono obbligatori</p></div>
       </fieldset>
-      <div class="row">
       <fieldset class="bottoni">
         <button type="submit" name="submit" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti">INVIA DATI</button>
         <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti" aria-label="Pulsante per resettare i dati inseriti"/>
       </fieldset>
-		  
-    </div>
     </form>
 </div>
 <div id="footer" title="footer" aria-label="footer">
