@@ -764,7 +764,7 @@ input[type="date"]{
 
 
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
-@media handheld, screen and (max-width:640px), only screen and (max-device-width:640px){
+@media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
 
 /*FOOTER*/
