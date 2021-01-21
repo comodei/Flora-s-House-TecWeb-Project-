@@ -1,9 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" 
-    "http://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
-<html xml:lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8" /> 
 <title>Prenotazioni - Flora's House</title>
 <meta name="title" content="Prenotazioni - Flora's House" />
 <!--titolo del sito che compare nella lista dei risultati prodotti a seguito di una query-->
@@ -19,31 +18,31 @@
 <link rel="stylesheet" href="../style/printPagine.css" type="text/css" media="print" />
 </head>
 <body>
-<div id="header" role="banner">
+<div id="header">
     <ul>
-    <li><a href="#menu" class="aiutiNascosti" title="Vai al menu" aria-label="Vai al menu">Vai al menù</a></li>
-    <li><a href="#main" class="aiutiNascosti" title="Vai al contenuto" aria-label="Vai al contenuto">Vai al contenuto principale</a></li>
+    <li><a href="#menu" class="aiutiNascosti" title="Vai al menu">Vai al menù</a></li>
+    <li><a href="#main" class="aiutiNascosti" title="Vai al contenuto">Vai al contenuto principale</a></li>
     </ul>
-    <a href="../html/base.html" title="Vai alla pagina home" aria-label="Vai alla pagina home"><img id="logo" src="../images/logo.png" alt="Spirale di colore giallo che rappresenta il logo della Villa"/></a>
+    <a href="../html/base.html" title="Vai alla pagina home"><img id="logo" src="../images/logo.png" alt="Spirale di colore giallo che rappresenta il logo della Villa"/></a>
     <h1>Flora's House</h1>
-    <h3>Un autentico <span xml:lang="en">relax</span> nei meravigliosi Colli Euganei</h3>
+    <h3>Un autentico <span lang="en">relax</span> nei meravigliosi Colli Euganei</h3>
 </div>
-<div id="breadcrumb" title="Breadcrumb" aria-label="Breadcrumb">
-    <p>Ti trovi in: <span xml:lang="en">Home >> Prenota</span></p>
+<div id="breadcrumb" title="Breadcrumb">
+    <p>Ti trovi in: <span lang="en">Home >> Prenota</span></p>
 </div>
-<div id="menu" role="navigation">
+<div id="menu">
     <ul>
-        <li><a href="../html/base.html" title="Vai alla pagina home" aria-label="Vai alla pagina home">Home</a></li>
-        <li><a href="../html/galleria.html" title="Vai alla pagina galleria" aria-label="Vai alla pagina galleria">Galleria</a></li>
+        <li><a href="../html/base.html" title="Vai alla pagina home">Home</a></li>
+        <li><a href="../html/galleria.html" title="Vai alla pagina galleria">Galleria</a></li>
         <li class="currentLink">Prenota</li>
-        <li><a href="../php/dintorni.php" title="Vai alla pagina dintorni" aria-label="Vai alla pagina dintorni">Dintorni</a></li>
-        <li class="endMenu"><a href="../html/contatti.html" title="Vai alla pagina contatti" aria-label="Vai alla pagina contatti">Contatti</a></li>
+        <li><a href="../php/dintorni.php" title="Vai alla pagina dintorni" >Dintorni</a></li>
+        <li class="endMenu"><a href="../html/contatti.html" title="Vai alla pagina contatti">Contatti</a></li>
     </ul>
 </div>
-<div class="main" role="main">
+<div class="main">
     <h2>Prenota il tuo Soggiorno!</h2>
     <messaggi/>
-    <form class="book" action="../php/nuovaPrenotazione.php" method="post" title="Form per prenotare" aria-label="Form per prenotare">
+    <form class="book" action="../php/nuovaPrenotazione.php" method="post" title="Form per prenotare">
       <fieldset class="fieldset_prenotaz" id="anagrafica">
 		  
         <div class="campo_prenotazione obbligatorio" id="insNome">
@@ -51,7 +50,7 @@
           <label for="nome">Nome:</label>
         </div>
         <div class="field">
-          <input type="text" id="nome" name="nome" aria-required="true" aria-label="Inserisci il tuo nome" title="Inserisci il tuo nome" required/>
+          <input type="text" id="nome" name="nome" title="Inserisci il tuo nome" required="required"/>
 			<errnome/>
         </div>
         </div>
@@ -60,7 +59,7 @@
           <label for="cognome">Cognome:</label>
         </div>
         <div class="field">
-          <input type="text" name="cognome" id="cognome" aria-required="true" aria-label="Inserisci il tuo cognome" title="Inserisci il tuo cognome" required/>
+          <input type="text" name="cognome" id="cognome" required="required"/>
 			<errcgnm/>
         </div>
         </div>
@@ -69,7 +68,7 @@
           <label for="codiceFiscale"><abbr title="Codice Fiscale">C.F.</abbr>:</label>
         </div>
         <div class="field">
-          <input type="text" name="codiceFiscale" id="codiceFiscale" aria-required="true" aria-label="Inserisci il tuo codice fiscale" title="Inserisci il tuo codice fiscale" required/>
+          <input type="text" name="codiceFiscale" id="codiceFiscale" title="Inserisci il tuo codice fiscale" required="required"/>
 			<errcf/>
         </div>
         </div>
@@ -78,7 +77,7 @@
 		      <label for="nascita">Data di nascita:</label>
         </div>
         <div class="field">
-          <input type="date" name="nascita" id="nascita" aria-required="true" aria-label="Inserisci la tua data di nascita nel formato GG-MM-AAAA" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG" required/>
+          <input type="date" name="nascita" id="nascita" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG" required="required"/>
 			<errnascita/>
         </div>
         </div>
@@ -87,7 +86,7 @@
           <label for="cellulare">Cellulare:</label>
         </div>
         <div class="field">
-          <input type="text" name="cellulare" id="cellulare" aria-required="true" aria-label="Inserisci il tuo numero di cellulare" title="Inserisci il tuo numero di cellulare" required/>
+          <input type="text" name="cellulare" id="cellulare" title="Inserisci il tuo numero di cellulare" required="required" />
 			<errcell/>
         </div>
         </div>
@@ -96,7 +95,7 @@
           <label for="email">Email:</label>
         </div>
         <div class="field">
-          <input type="text" name="email" id="email" aria-required="true" aria-label="Inserisci la tua email" title="Inserisci la tua email" required/>
+          <input type="text" name="email" id="email" title="Inserisci la tua email" required="required"/>
 			<errmail/>
         </div>
         </div>
@@ -109,7 +108,7 @@
 		      <label for="carta">Carta di Credito / Prepagata:</label>
         </div>
         <div class="field">
-          <input type="text" name="carta" id="carta" aria-required="true" aria-label="Inserisci le 16 cifre della tua carta di credito" title="Inserisci le 16 cifre della tua carta di credito" required/>
+          <input type="text" name="carta" id="carta" title="Inserisci le 16 cifre della tua carta di credito" required="required"/>
 			<errcarta/>
         </div>
         </div>
@@ -119,7 +118,7 @@
 		      <label for="checkin">Data di check-in:</label>
       </div>
       <div class="field">
-          <input type="date" name="checkin" id="checkin" aria-required="true" aria-label="Inserisci la data del checkin nel formato AAAA-MM-GG" title="Inserisci la data del checkin nel formato AAAA-MM-GG" required/>
+          <input type="date" name="checkin" id="checkin" title="Inserisci la data del checkin nel formato AAAA-MM-GG" required="required"/>
 		  <errckin/>
       </div>
       </div>
@@ -128,7 +127,7 @@
 		      <label for="checkout">Data di check-out:</label>
       </div>
       <div class="field">
-        <input type="date" name="checkout" id="checkout" aria-required="true" aria-label="Inserisci la data del checkout nel formato AAAA-MM-GG" title="Inserisci la data del checkout nel formato AAAA-MM-GG" require/>
+        <input type="date" name="checkout" id="checkout" title="Inserisci la data del checkout nel formato AAAA-MM-GG" required="required"/>
 		  <errckout/>
 		  <errdate/>
       </div>
@@ -138,18 +137,18 @@
         <label for="descrizione">Richieste Particolari: </label>
       </div>
       <div class="field">
-        <textarea id="descrizione" name="descrizione" rows="10" cols="50" title="Scrivi qui per richieste particolari" aria-label="Scrivi qui per richieste particolari"></textarea>
+        <textarea id="descrizione" name="descrizione" rows="10" cols="50" title="Scrivi qui per richieste particolari"></textarea>
       </div>
       </div>
 		  <div class="suggerimento"><p>*i campi segnati dall'asterisco sono obbligatori</p></div>
       </fieldset>
       <fieldset class="bottoni">
-        <button type="submit" name="submit" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti">INVIA DATI</button>
-        <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti" aria-label="Pulsante per resettare i dati inseriti"/>
+        <button type="submit" name="submit" title="Pulsante per inviare i dati inseriti">INVIA DATI</button>
+        <input type="reset" value="RESETTA DATI INSERITI" title="Pulsante per resettare i dati inseriti"/>
       </fieldset>
     </form>
 </div>
-<div id="footer" title="footer" aria-label="footer">
+<div id="footer" title="footer">
     <img id="imgValidCSS" src="../images/vcss-blue.gif" alt="validità css"/>
     <img id="imgValidCode" src="../images/valid-xhtml10.png" alt="logo validità xhtml" />
     <ul>
