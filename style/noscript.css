@@ -25,3 +25,7 @@ div.main .mySlides img{
 .punti{
 	display: none;
 }
+
+div.main .anteprima img{
+	cursor: default;
+}

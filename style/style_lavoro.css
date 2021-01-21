@@ -595,13 +595,13 @@ form.book label{
   padding: 0.2em 0.2em 0.2em 0;
   display: inline-block;
 }
-form.book input[type=text], textarea, input[type=password] {
-  width: 80%;
+form.book input, textarea {
+  width: 100%;
   padding: 0.8em;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-  margin-bottom: 0.5em;  
+  margin-bottom: 0.5em;
 }
 form.book button, input[type=reset]{
   background-color: #3A7F73;
@@ -681,13 +681,14 @@ form.book button:hover,input[type=reset]:hover {
 	padding: 2.7em 3.3em;
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	column-gap: 0em;
+	column-gap: 3em;
 	row-gap: 1.6em;
 	
 }
 
 
 .campo_prenotazione{
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -743,9 +744,9 @@ form.book button:hover,input[type=reset]:hover {
 
 
 .tag{
-	flex-grow: 1;
+	flex-grow: 0;
 	max-width: 15em;
-	min-width: 10em;
+	min-width: 8em;
 }
 
 
@@ -753,7 +754,13 @@ form.book button:hover,input[type=reset]:hover {
 	flex-grow: 1;
 }
 
+
 .obbligatorio .tag label::before{
 	content:'* ';
 	color: rgba(176,29,31,0.90);
+}
+
+input[type="date"]{
+	max-width: 10em;
+	margin-left: 2em;
 }
