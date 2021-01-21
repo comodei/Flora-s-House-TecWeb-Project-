@@ -761,3 +761,232 @@ form.book button:hover,input[type=reset]:hover {
 input[type="date"]{
 	max-width: 12em;
 }
+
+
+/*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
+@media handheld, screen and (max-width:640px), only screen and (max-device-width:640px){
+	/*INIZIO CSS MOBILE*/
+
+/*FOOTER*/
+#footer{
+    font-size: 0.9em;
+}
+#imgValidCode{
+    display: none;
+}
+#imgValidCSS{
+    display: none;
+}
+
+/*HEADER*/
+#header h1{
+	font-size: 2.2em;;
+}
+#header h3{
+	display: none;
+}
+#header{
+	padding: 0.6em;
+}
+img#logo{
+	max-height: 3em;
+	margin-right: -3%;
+	margin-left: 0em;
+}
+
+/*BREADCRUMB*/
+#breadcrumb{
+	padding: 0.3em;
+}
+
+/*MENU*/
+#menu ul li {
+	max-width: 20%;
+	padding: 0.8em 0em;
+	text-align: center;
+}
+#menu ul li a{
+	padding: 0.2em;
+	display: contents;
+}
+img.imgDot{
+    width: 10%;
+}
+.main{
+	padding: 1.2em; /*troppo stretto altrimenti, perfetto per il form che non sgrana*/
+}
+/*CONTENUTO GENERALE*/
+.main p{
+	font-size: 0.8em;
+}
+.main h2{ 
+    font-size: 1.3em;
+}
+.main h3{
+    font-size: 1.3em;
+}
+/*PAGINA CONTATTI*/
+.main div.map_container{
+	margin-left: -1.2em;
+}
+dl.elencoContatti dt{
+    font-size: 1.1em;
+}
+dl.elencoContatti dd{
+    font-size: 1em;
+}
+ul.elenco li{
+    font-size: 0.9em;
+}
+ul li.diversoPeriodo{
+    font-size: 1em;
+}
+ul .nomeCitta{
+    font-size: 1em;
+}
+
+.main p{
+	font-size: 1.2em;
+}
+
+/*FORM PRENOTAZIONI*/
+form.book input[type=text], textarea {
+  width: 70%; 
+}
+.col-25 {
+  width: 50%;
+}
+
+.col-75 {
+  width: 50%;
+}
+/*PAGINA DINTORNI DL*/
+#attivita dt{
+	font-size: 0.9em;
+}
+#attivita dd img{
+	display: none;
+}
+#torna1{
+	visibility: visible;
+	font-size: 1.2em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border:1px solid #235B51;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-left: 0.5em;
+	background-color: #235B51;
+	color:white;
+}
+/*modificato 10/01*/
+.slideshow_wrapper{
+	margin: -0.8em -1.2em 0em;
+}
+div.main .slideshow-container {
+    height: 12em;
+    width:97%;
+}
+div.main .slidetext {
+	display: none;
+
+}
+/*togliere descrizione galleria, toglie troppo spazio*/
+
+div.main .slideshow-container{
+	max-width: 100%;
+	padding: 1em 0em 0em;	
+}
+
+#galleriaSlidePunti{
+	/*display: none;*/
+	padding: 2em 0em;
+}
+
+#mainGalleria{
+	padding: 0em;
+	background-color: rgba(2,21,19,1.00);
+	
+}
+
+#galleriaAnteprime{
+	display: none;
+}
+
+div.main .galleria{
+	background-color: #8DC4AB;
+	margin: 0em;
+	width: 100%;
+	padding: 1em 0em 2em;
+}
+
+div.main .contenitoreAnteprime{
+	display: block;
+}
+
+div.main .anteprima{
+	padding: 0em 0em 0.5em;
+}
+
+#contattiContainer{
+	display: block;
+}
+
+#periodoApertura{
+	margin: 1em 0em;
+	padding-left: 1em;
+}
+
+#maps{
+	margin: 0em;
+	width: 100%;
+	min-height:  inherit;
+	min-width: 100%;
+}
+
+#map_container{
+	min-height: 18em;
+}
+
+#raggiungiCitta{
+	padding-bottom: 2em;
+}
+
+#contattaci .elencoContatti{
+	padding-left: 0.3em;
+}
+
+.field_prenotaz{
+	padding: 0em;
+}
+/*pagina access denied*/
+h1.titolo_access_denied{
+  font-size: 1.2em;
+}
+p.access_denied{
+  	font-size: 1em;
+	 width: 100%;
+	 margin:0em;
+}
+.main img.err_acc{
+  	width: 70%;
+  	margin-left: 2.5em;
+}
+/*Pagina 404*/
+.main h1.titolo_404{
+	font-size: 1.2em;
+}
+.main p.sottotitolo_404{
+	 font-size: 1em;
+	 width: 100%;
+	 margin:0em;
+}
+.main img.img_404{
+    width: 70%;
+    margin-left: 2.5em;
+}
+
+.fieldset_prenotaz{
+	display: block;
+}
+}/*FINE CSS MOBILE*/
