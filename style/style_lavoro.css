@@ -575,12 +575,6 @@ div.slideshow-container img{
 }
 
 /*FORM PRENOTAZIONE*/
-form.book legend{
-  margin-left:1em;
-  font-weight: bold;
-  font-size:1.3em;  
-  color:rgba(54,68,64,1.00);
-}
 form.book fieldset{
   border: 4px solid #3A7F73;
   border-radius: 10px;
@@ -589,19 +583,15 @@ form.book fieldset{
 form.book fieldset.bottoni{
   border-top: none;
 } 
-form.book label{
-  margin-left: 0.4em;
-  color:rgba(54,68,64,1.00);
-  padding: 0.2em 0.2em 0.2em 0;
-  display: inline-block;
-}
 form.book input, textarea {
   width: 100%;
   padding: 0.8em;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-  margin-bottom: 0.5em;
+	
+	box-sizing: border-box;
+	margin-left: 0.6em;
 }
 form.book button, input[type=reset]{
   background-color: #3A7F73;
@@ -639,7 +629,6 @@ form.book button:hover,input[type=reset]:hover {
 .suggerimento p{
 	text-align: right;
 	color: rgba(12,12,12,0.72);
-	padding-right: 12%;
 	font-size: 0.8em;
 }
 
@@ -678,9 +667,9 @@ form.book button:hover,input[type=reset]:hover {
 
 /*DA QUI IN POI LE AGGIUNTE RECENTI AL CSS PRENOTAZIONI*/
 .fieldset_prenotaz{
-	padding: 2.7em 3.3em;
+	padding: 2.7em 4em 2.7em 3.3em;
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3em;
 	row-gap: 1.6em;
 	
@@ -688,7 +677,7 @@ form.book button:hover,input[type=reset]:hover {
 
 
 .campo_prenotazione{
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -749,10 +738,16 @@ form.book button:hover,input[type=reset]:hover {
 	min-width: 8em;
 }
 
+.tag label{
+	text-align: right;
+	color:rgba(54,68,64,1.00);
+}
+
 
 .field{
 	flex-grow: 1;
 }
+
 
 
 .obbligatorio .tag label::before{
@@ -762,5 +757,4 @@ form.book button:hover,input[type=reset]:hover {
 
 input[type="date"]{
 	max-width: 10em;
-	margin-left: 2em;
 }
