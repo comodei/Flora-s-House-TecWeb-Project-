@@ -588,7 +588,6 @@ form.book input, textarea {
   padding: 0.8em;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;
 	
 	box-sizing: border-box;
 	margin-left: 0.6em;
@@ -724,6 +723,10 @@ form.book button:hover,input[type=reset]:hover {
 	grid-area: 3 / 1 / span 2 / span 2;
 	display: block;
 	
+}
+
+#richieste textarea{
+	resize: vertical;
 }
 
 
