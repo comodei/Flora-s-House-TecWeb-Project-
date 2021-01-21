@@ -218,3 +218,7 @@ p.access_denied{
     width: 70%;
     margin-left: 2.5em;
 }
+
+.fieldset_prenotaz{
+	display: block;
+}
