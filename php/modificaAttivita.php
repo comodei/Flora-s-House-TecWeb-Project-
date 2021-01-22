@@ -51,7 +51,7 @@
 
                 if(mysqli_affected_rows($connessione->getConnection())==1){
                     $connessione->closeConnection();
-                    echo "<div class='mess'>Attivita eliminata con successo</div>";
+                    echo "<div class='mess'>Attivita eliminata con successo, reindirizzamento in corso</div>";
 					header( "refresh:5;url=gestAttivita.php" );
 					exit;
                     
@@ -72,7 +72,7 @@
                 $queryResult = mysqli_query($connessione->getConnection(), $query);
                 if(mysqli_affected_rows($connessione->getConnection())>=1){
                     $connessione->closeConnection();
-                    echo "<div class='mess'>Attivita aggiornata con successo</div>";
+                    echo "<div class='mess'>Attivita aggiornata con successo, reindirizzamento in corso</div>";
 					header( "refresh:5;url=gestAttivita.php" );
 					exit;
                 }

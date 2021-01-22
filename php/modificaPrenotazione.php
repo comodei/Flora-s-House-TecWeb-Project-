@@ -33,7 +33,7 @@
 			 $queryResult = mysqli_query($connessione->getConnection(), $query);
 			 if(mysqli_affected_rows($connessione->getConnection())>=1){
 					$connessione->closeConnection();
-					echo "<div class='mess'>Prenotazione eliminata con successo</div>";
+					echo "<div class='mess'>Prenotazione eliminata con successo, reindirizzamento in corso</div>";
 					header( "refresh:5;url=gestPrenotazioni.php" );
 					exit;
 				} else {
@@ -63,7 +63,7 @@
 					$queryResult = mysqli_query($connessione->getConnection(), $query);
 					if(mysqli_affected_rows($connessione->getConnection())>=1){
 						$connessione->closeConnection();
-						echo "<div class='mess'>Prenotazione aggiornata con successo</div>";
+						echo "<div class='mess'>Prenotazione aggiornata con successo, reindirizzamento in corso</div>";
 						header( "refresh:5;url=gestPrenotazioni.php" );
 						exit;
 					}
