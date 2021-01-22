@@ -595,13 +595,12 @@ form.book input, textarea {
 	box-sizing: border-box;
 	margin-left: 0.6em;
 }
+
 form.book button, input[type=reset]{
   background-color: #3A7F73;
   color: white;
   padding: 0.8em 0.8em;
-  margin-left: 0.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0.6em;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -674,7 +673,6 @@ form.book button:hover,input[type=reset]:hover {
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3em;
 	row-gap: 1.6em;
-	
 }
 
 
@@ -758,11 +756,27 @@ form.book button:hover,input[type=reset]:hover {
 
 .obbligatorio .tag label::before{
 	content:'* ';
-	color: rgba(176,29,31,0.90);
+	position: absolute;
+	color: rgba(176,29,31,0.95);
 }
 
 input[type="date"]{
 	max-width: 12em;
+}
+
+.bottoni{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.bottoni input[type="reset"], button{
+	width: auto;
+	min-width: 15em;
+}
+
+.bottoni button{
+	order: 1;
 }
 
 
@@ -853,9 +867,6 @@ ul .nomeCitta{
 }
 
 /*FORM PRENOTAZIONI*/
-form.book input[type=text], textarea {
-  width: 70%; 
-}
 .col-25 {
   width: 50%;
 }
@@ -962,9 +973,6 @@ div.main .anteprima{
 	padding-left: 0.3em;
 }
 
-.field_prenotaz{
-	padding: 0em;
-}
 /*pagina access denied*/
 h1.titolo_access_denied{
   font-size: 1.2em;
@@ -994,5 +1002,19 @@ p.access_denied{
 
 .fieldset_prenotaz{
 	display: block;
+	padding: 2em;
+	padding-left: 1.8em;
 }
+	
+.campo_prenotazione{
+	margin-bottom: 1em;
+}
+	
+.bottoni input[type="reset"], button{
+	width: 100%;
+}
+	
+	.suggerimento{
+		font-size: 0.7em;
+	}
 }/*FINE CSS MOBILE*/
