@@ -46,8 +46,8 @@ class cliente{
         } else { 
 			if(mysqli_affected_rows($db->getConnection())==1) {
 			return true;
-			}
-		} else return false;
+			} else return false;
+		} 
     }
 	public function getNome(){
        return $this->nome;
