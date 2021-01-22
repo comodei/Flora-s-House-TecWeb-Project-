@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
 		if($connessione->isConnected()){
 			$result_cliente = $cliente->inserisciCliente($connessione);
 			$result_prenotazione = $prenotazione->inserisciPrenotazione($connessione);
-			if($result_cliente&&$result_prenotazione){
+			if($result_cliente && $result_prenotazione){
 				$messaggio.= '<div class="conferma"><p>Prenotazione completata</p></div>';
 			} else $messaggio.= '<div class="errori"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
 			
