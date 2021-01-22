@@ -194,6 +194,9 @@ body{
     padding-top:1em;
     float:right;
 }
+#footer a{
+	color: rgba(255,255,255,0.83);
+}
 
 /*PAGINA DINTORNI*/
 #attivita{
@@ -875,7 +878,6 @@ form.book input[type=text], textarea {
 	border:1px solid #235B51;
 	border-radius: 10px;
 	text-decoration: none;
-	padding-left: 0.5em;
 	background-color: #235B51;
 	color:white;
 }
