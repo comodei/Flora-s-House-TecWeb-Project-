@@ -22,20 +22,16 @@ if(isset($_POST['submit'])){
 		if($connessione->isConnected()){
 			$result_cliente = $cliente->inserisciCliente($connessione);
 			$result_prenotazione = $prenotazione->inserisciPrenotazione($connessione);
-			if($result_cliente){
-				$messaggio.= '<div id="confermaCliente"><p>Cliente inserito correttamente</p></div>';
-			} else $messaggio.= '<div id="erroriCliente"><p>Errore nell\' inserimento del cliente. Riprovare</p></div>';
-			
-			if($result_prenotazione){
-				$messaggio.= '<div id="confermaPreno"><p>Prenotazione inserita correttamente</p></div>';
-			} else $messaggio.= '<div id="erroriPreno"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
+			if($result_cliente&&$result_prenotazione){
+				$messaggio.= '<div class="conferma"><p>Prenotazione completata</p></div>';
+			} else $messaggio.= '<div class="errori"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
 			
 		}
 	
 		$paginaHTML = str_replace('<messaggi/>', $messaggio, $paginaHTML);
 		echo $paginaHTML;
 	} else {
-		$messaggioPerForm = '<div id="errori" class="err"><ul>';
+		$messaggioPerForm = '<div class="errori" ><ul>';
 		if(!input_check::check_nome($cliente->getNome())){
 			
 			$messaggioPerForm.='<li>Inserisci un nome valido</li>';

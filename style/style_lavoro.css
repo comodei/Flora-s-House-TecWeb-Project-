@@ -638,32 +638,32 @@ form.book button:hover,input[type=reset]:hover {
 }
 
 /*ERRORI PRENOTAZIONI*/
-.err li{
+.errori li{
 	list-style-type: none;
+}
+
+.errori{
+	
 	color: rgba(144,20,8,0.91);
     font-size: 0.9em;
     font-weight: bold;
-}
-
-.err ul{
 	padding: 1em;
 	margin: 1em 0em;
 	border: 4px solid #3A7F73;
     border-radius: 10px;
     margin-bottom: 0.5em;
 }
-/* 
-#errori{
-    border: 0;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+
+.conferma{
+	background-color: rgba(66,202,0,0.45);
+	font-size: 2.5em;
+    font-weight: bold;
+	padding: 1em;
+	margin: 1em 0em;
+	border: 4px solid #3A7F73;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
 }
-*/
 
 
 /*DA QUI IN POI LE AGGIUNTE RECENTI AL CSS PRENOTAZIONI*/
