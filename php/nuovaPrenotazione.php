@@ -17,17 +17,19 @@ if(isset($_POST['submit'])){
    
     
 	if ($prenotazione->isCorrect() && $cliente->isCorrect()){
+		$messaggio="";
 		$connessione = new connection();
 		if($connessione->isConnected()){
 			$result_cliente = $cliente->inserisciCliente($connessione);
 			$result_prenotazione = $prenotazione->inserisciPrenotazione($connessione);
-        
-			if($result_prenotazione && $result_cliente){
-				$messaggio = '<div id="conferma"><p>Cliente inserito correttamente</p></div>';
-			}
-			else{
-				$messaggio = '<div id="errori"><p>Errore nell\' inserimento del cliente. Riprovare</p></div>';
-			}
+			if($result_cliente){
+				$messaggio.= '<div id="confermaCliente"><p>Cliente inserito correttamente</p></div>';
+			} else $messaggio.= '<div id="erroriCliente"><p>Errore nell\' inserimento del cliente. Riprovare</p></div>';
+			
+			if($result_prenotazione){
+				$messaggio.= '<div id="confermaPreno"><p>Prenotazione inserita correttamente</p></div>';
+			} else $messaggio.= '<div id="erroriPreno"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
+			
 		}
 	
 		$paginaHTML = str_replace('<messaggi/>', $messaggio, $paginaHTML);

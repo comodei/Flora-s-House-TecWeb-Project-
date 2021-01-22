@@ -30,6 +30,7 @@ class cliente{
         
         $query = "SELECT CodiceFiscale FROM Cliente WHERE CodiceFiscale=\"$this->cf\"";
         $queryResult = mysqli_query($db->getConnection(),$query);
+		
         if(mysqli_affected_rows($db->getConnection())==0){
             $query = "INSERT INTO Cliente(CodiceFiscale,Nome,Cognome,Cellulare,Email,Carta,DataNascita)
                 VALUES ( \"$this->cf\",\"$this->nome\",\"$this->cognome\",$this->cellulare,\"$this->email\",
@@ -42,7 +43,11 @@ class cliente{
             else{
                 return false;
             }
-        }
+        } else { 
+			if(mysqli_affected_rows($db->getConnection())==1) {
+			return true;
+			}
+		} else return false;
     }
 	public function getNome(){
        return $this->nome;
