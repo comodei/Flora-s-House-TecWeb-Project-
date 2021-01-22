@@ -16,7 +16,7 @@ body{
     max-width:1024px;
     margin:auto;
     font-family:"Arial",cursive,Sans-serif;
-    background-color: #8DC4AB;
+    background-color: #235B51;
 }
 
 /*AIUTI ALLA NAVIGAZIONE: NB MOLTO IMPORTANTE*/
@@ -894,6 +894,10 @@ div.main .slidetext {
 
 }
 /*togliere descrizione galleria, toglie troppo spazio*/
+	
+body{
+		min-height: 100vh;
+}
 
 div.main .slideshow-container{
 	max-width: 100%;
