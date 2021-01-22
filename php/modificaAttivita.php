@@ -65,7 +65,8 @@
             }
 
             else{
-                
+                $descrizione = str_replace("'", "\'" , $descrizione);
+				$descrizione = str_replace('"','\"' , $descrizione);
                 $query = "UPDATE attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
                     Link=\"$link\", AltImmagine=\"$altimmagine\", Immagine=\"$immagine\" WHERE Codice=\"$codice\"";
                 $queryResult = mysqli_query($connessione->getConnection(), $query);
