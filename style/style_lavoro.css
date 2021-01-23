@@ -616,17 +616,6 @@ fieldset#log{
 form.book button:hover,input[type=reset]:hover {
   background-color: #1B4188;
 }
-.col-25 {
-  float: left;
-  width: 30%;
-  margin-top: 0.5em;
-}
-
-.col-75 {
-  float: left;
-  width: 70%;
-  margin-top: 0.5em;
-}
 
 .suggerimento p{
 	text-align: right;
@@ -634,7 +623,7 @@ form.book button:hover,input[type=reset]:hover {
 	font-size: 0.8em;
 }
 
-.field_prenotaz{
+.display_admin{
 	padding: 1.5em 3.3em;
 }
 
@@ -724,10 +713,11 @@ form.book button:hover,input[type=reset]:hover {
 #richieste {
 	grid-area: 3 / 1 / span 2 / span 2;
 	display: block;
+	min-height: 12em;
 	
 }
 
-#richieste textarea{
+textarea{
 	resize: vertical;
 }
 
@@ -761,7 +751,7 @@ form.book button:hover,input[type=reset]:hover {
 	color: rgba(176,29,31,0.95);
 }
 
-input[type="date"]{
+input[type="date"], #checkin, #checkout {
 	max-width: 12em;
 }
 
@@ -813,6 +803,25 @@ input[type="date"]{
 
 .login_admin .tag label{
 	float: right;
+}
+
+
+.campo_attivita{
+	padding: 0.3em;
+	align-items: flex-start;
+}
+
+.campo_attivita .tag{
+	width: 25%;
+}
+
+.display_admin label[for=codice]{
+	display: block;
+	padding-bottom: 0.8em;
+}
+
+.campo_chk{
+	flex-grow: 1;
 }
 
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
@@ -1055,9 +1064,9 @@ p.access_denied{
 	width: 100%;
 }
 	
-	.suggerimento{
-		font-size: 0.7em;
-	}
+.suggerimento{
+	font-size: 0.7em;
+}
 	
 .login{
 	padding: 2em 0em 0em;
@@ -1066,16 +1075,22 @@ p.access_denied{
 .login_admin{
 	width: auto;
 }
-.login_admin .field {
-}
-
-.login_admin .tag{
-}
-
 .login_admin .tag label{
 	float: none;
 }
 
+.display_admin{
+	padding: 1em;
+	padding-right: 2em;
+}
+	
+.campo_attivita .tag{
+	width: auto;
+}
+	
+.campo_attivita .field{
+	width: 100%;
+}
 }/*FINE CSS MOBILE*/
 
 
