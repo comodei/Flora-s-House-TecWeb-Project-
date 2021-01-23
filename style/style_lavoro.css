@@ -834,6 +834,11 @@ input[type="date"], #checkin, #checkout {
 	text-align: center;
 }
 
+
+.codicihidden{
+	display:none;
+	
+}
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
@@ -1101,6 +1106,7 @@ p.access_denied{
 .campo_attivita .field{
 	width: 100%;
 }
+
 }/*FINE CSS MOBILE*/
 
 

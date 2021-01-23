@@ -23,7 +23,7 @@
                 
                 //codice
                 //$ulAttivita.='<div class="row"><div class="col-25"><label for="codice">Codice:</label></div><div class="field">';
-				$ulAttivita.='<input type="text" name="codice"  id="codice" style="display:none;" value="'.$attivita['Codice'].'"/>';
+				$ulAttivita.='<input type="text" aria-hidden="true" class="codicihidden" name="codice"  id="codice" value="'.$attivita['Codice'].'"/>';
                 //titolo
                 $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="titolo">Titolo:</label></div><div class="field">';
                 $ulAttivita.='<input type="text" id="titolo" name="titolo" value="'.$attivita['Titolo'].'"/></div></div>';

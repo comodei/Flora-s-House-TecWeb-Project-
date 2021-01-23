@@ -21,7 +21,7 @@
             foreach($listaPrenotazioni as $prenotazione){
 				$ulPrenotazione.='<li><form class="book" action="../php/modificaPrenotazione.php" method="post" title="Form per gestione prenotazioni" aria-label="Form per gestire le prenotazioni"> <fieldset class="display_admin" > 
 					<label for="codice"> Codice prenotazione: '.$prenotazione['Codice'].'</label>
-					<input type="text" name="codice"  id="codice" style="display:none;" value="'.$prenotazione['Codice'].'"/>
+					<input type="text" name="codice"  aria-hidden="true" class="codicihidden" id="codice"  value="'.$prenotazione['Codice'].'"/>
 					<div class="campo_prenotazione" id="chkin-chkout"><div id="campo_chkin" class="campo_chk">
 					<label for="checkin">Data di check-in:</label>
 					<input type="text" name="checkin" id="checkin" aria-required="true" value="'.$prenotazione['DataCheckIn'].'"aria-label="Inserisci la data del checkin nel formato AAAA-MM-GG" title="Inserisci la data del checkin nel formato AAAA-MM-GG"/></div>
