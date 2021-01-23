@@ -19,28 +19,28 @@
 
             foreach($listaAttivita as $attivita){
                 //Inizio form e label
-                $ulAttivita.='<li><form class="book" action="../php/modificaAttivita.php" method="post" title="Form per gestire le attivita" aria-label="Form per gestire le attivita"> <fieldset class="field_prenotaz">';
+                $ulAttivita.='<li><form class="book" action="../php/modificaAttivita.php" method="post" title="Form per gestire le attivita" aria-label="Form per gestire le attivita"> <fieldset class="display_admin">';
                 
                 //codice
-                //$ulAttivita.='<div class="row"><div class="col-25"><label for="codice">Codice:</label></div><div class="col-75">';
+                //$ulAttivita.='<div class="row"><div class="col-25"><label for="codice">Codice:</label></div><div class="field">';
 				$ulAttivita.='<input type="text" name="codice"  id="codice" style="display:none;" value="'.$attivita['Codice'].'"/>';
                 //titolo
-                $ulAttivita.='<div class="row"><div class="col-25"><label for="titolo">Titolo:</label></div><div class="col-75">';
-                $ulAttivita.='<input type="text" id="titolo" name="titolo" value="'.$attivita['Titolo'].'"/></br></div></div>';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="titolo">Titolo:</label></div><div class="field">';
+                $ulAttivita.='<input type="text" id="titolo" name="titolo" value="'.$attivita['Titolo'].'"/></div></div>';
                 //descrizione
-                $ulAttivita.='<div class="row"><div class="col-25"><label for="descrizione">Descrizione:</label></div><div class="col-75">';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="descrizione">Descrizione:</label></div><div class="field">';
                 $ulAttivita.='<textarea name="descrizione">'.$attivita['Descrizione'].'</textarea></div></div>';
                 //link
-                $ulAttivita.='<div class="row"><div class="col-25"><label for="link">Link:</label></div><div class="col-75">';
-                $ulAttivita.='<input type="text" id="link" name="link" value="'.$attivita['Link'].'"/></br></div></div>';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="link">Link:</label></div><div class="field">';
+                $ulAttivita.='<input type="text" id="link" name="link" value="'.$attivita['Link'].'"/></div></div>';
                 //alt_immagine
-                $ulAttivita.='<div class="row"><div class="col-25"><label for="alt_immagine">Descrizione immagine:</label></div><div class="col-75">';
-                $ulAttivita.='<input type="text" id="alt_imamgine" name="alt_immagine" value="'.$attivita['AltImmagine'].'"/></br></div></div>';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="alt_immagine">Descrizione immagine:</label></div><div class="field">';
+                $ulAttivita.='<input type="text" id="alt_imamgine" name="alt_immagine" value="'.$attivita['AltImmagine'].'"/></div></div>';
                 //immagine
-                $ulAttivita.='<div class="row"><div class="col-25"><label for="immagine">Percorso immagine:</label></div><div class="col-75">';
-                $ulAttivita.='<input type="text" id="immagine" name="immagine" value="'.$attivita['Immagine'].'"/></br></div></div>';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita"><div class="tag"><label for="immagine">Percorso immagine:</label></div><div class="field">';
+                $ulAttivita.='<input type="text" id="immagine" name="immagine" value="'.$attivita['Immagine'].'"/></div></div>';
                 //bottoni
-                $ulAttivita.='<div class="row">';
+                $ulAttivita.='<div class="campo_prenotazione campo_attivita bottoni">';
                 $ulAttivita.='<button type="submit" name="submitMod" title="Pulsante per modificare con i dati inseriti">Modifica</button>';
                 $ulAttivita.='<button type="submit" name="submitDel" title="Pulsante per eliminare attività">Rimuovi</button>';
                 $ulAttivita.='</div>';
