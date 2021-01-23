@@ -23,7 +23,7 @@ class cliente{
 
     public function isCorrect(){
        return input_check::check_nome($this->nome) && input_check::check_nome($this->cognome) && input_check::cf_check($this->cf) &&  
-		input_check::check_email($this->email) && input_check::check_card($this->carta) && input_check::date_check($this->data_nascita) && input_check::check_num($this->cellulare) ;
+		input_check::check_email($this->email) && input_check::check_card($this->carta) && input_check::date_check($this->data_nascita) && input_check::check_num($this->cellulare)  && input_check::fourteen($this->data_nascita);
     }
    
     public function inserisciCliente(connection $db){

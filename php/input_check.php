@@ -2,9 +2,10 @@
 /*
  * Classe che implementa sicurezza sull'input
  */
-
+date_default_timezone_set('Europe/Rome');
 class input_check{
-    /* Controllo sul codice fiscale */
+	
+    
     public static function cf_check($field){
         if (preg_match("^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$^", $field)==1){ 
             return true;
@@ -58,6 +59,25 @@ class input_check{
        return false;
 		
 	}
+	
+	public static function future_date($date){
+		$date1 = date('Y-m-d');
+		if ($date>=$date1){
+			return true;
+		} else return false;	
+		
+	}
+	
+	public static function fourteen($date){
+		$date = strtotime($date);
+		$min = strtotime('+14 years', $date);
+		if(time() < $min)  {
+			return false;
+		} else return true;	
+	}
+	
+	
+	
 
 }
 

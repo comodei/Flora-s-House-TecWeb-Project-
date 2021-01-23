@@ -68,6 +68,17 @@ if(isset($_POST['submit'])){
 		
 			$messaggioPerForm.='<li>Inserisci una data di check-out valida: deve essere in formato ANNO-MESE-GIORNO (AAAA-MM-GG)</li>';
 		}
+		if(!input_check::future_date($prenotazione->getCheckin())){
+		
+			$messaggioPerForm.='<li>Inserisci una data di check-in valida: non puoi inserire una data passata </li>';
+		}
+		if(!input_check::future_date($prenotazione->getCheckout())){
+		
+			$messaggioPerForm.='<li>Inserisci una data di check-out valida: non puoi inserire una data passata </li>';
+		}
+		if(!input_check::fourteen($cliente->getNascita())){
+			$messaggioPerForm.='<li>Per effettuare una prenotazione devi avere almeno 14 anni  </li>';
+		}
 		if($prenotazione->getCheckin() > $prenotazione->getCheckout()){
 		
 			$messaggioPerForm.='<li>La data di check in non può essere dopo la data di check out</li>';
