@@ -645,14 +645,15 @@ form.book button:hover,input[type=reset]:hover {
 }
 
 .conferma{
-	background-color: rgba(66,202,0,0.45);
-	font-size: 2.5em;
+	background-color: rgba(213,229,205,1.00);
+	font-size: 1.8em;
     font-weight: bold;
-	padding: 1em;
-	margin: 1em 0em;
+	padding: 1.3em;
+	margin: 0em 0em 0.5em;
 	border: 4px solid #3A7F73;
     border-radius: 10px;
-    margin-bottom: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 
@@ -931,14 +932,6 @@ ul .nomeCitta{
 	font-size: 1.2em;
 }
 
-/*FORM PRENOTAZIONI*/
-.col-25 {
-  width: 50%;
-}
-
-.col-75 {
-  width: 50%;
-}
 /*PAGINA DINTORNI DL*/
 #attivita dt{
 	font-size: 0.9em;
