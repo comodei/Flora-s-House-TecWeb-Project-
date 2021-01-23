@@ -1,7 +1,7 @@
 <?php
   
    session_start();
-   header("location: ../html/base.html");  
+   header("location: ../html/login.html");  
    session_unset();
 
 ?>

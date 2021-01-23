@@ -824,6 +824,16 @@ input[type="date"], #checkin, #checkout {
 	flex-grow: 1;
 }
 
+#tornaHome {
+	width: 100%;
+	margin-top: 3em;
+}
+
+#tornaHome p{
+	font-size: 0.9em;
+	text-align: center;
+}
+
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
@@ -1092,5 +1102,7 @@ p.access_denied{
 	width: 100%;
 }
 }/*FINE CSS MOBILE*/
+
+
 
 
