@@ -20,7 +20,7 @@
 		}
 
 		$connessione = new connection();
-		$error = '<div class="err"><ul>';
+		$error = '<div class="errori"><ul>';
 
 		if($connessione->isConnected()){
         

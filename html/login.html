@@ -28,26 +28,27 @@
     <h2>Login</h2>
     <messaggi/>
     <form class="book" action="../php/login.php" method="post" title="Form per login" aria-label="Form per login">
-        <fieldset class="field_prenotaz">
-            <div class="row">
-                <div class="col-25">
+        <fieldset class="login">
+            <div class="campo_prenotazione login_admin">
+                <div class="tag">
                   <label for="utente">Utente: </label>
                 </div>
-                <div class="col-75">
-                  <input type="text" id="utente" name="utente" aria-required="true" aria-label="Inserisci l'utente" title="Inserisci l'utente"/><br/>
+                <div class="field">
+                  <input type="text" id="utente" name="utente" aria-required="true" aria-label="Inserisci l'utente" title="Inserisci l'utente"/>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-25">
+            <div class="campo_prenotazione login_admin">
+                <div class="tag">
                   <label for="password">Password: </label>
                 </div>
-                <div class="col-75">
-                  <input type="password" id="password" name="password" aria-required="true" aria-label="Inserisci la password" title="Inserisci la password"/><br/>
+                <div class="field">
+                  <input type="password" id="password" name="password" aria-required="true" aria-label="Inserisci la password" title="Inserisci la password"/>
                 </div>
+				
+        <fieldset id="log" class="campo_prenotazione login_admin">
+        <button type="submit" name="submit" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti">LOGIN</button></fieldset>
             </div>
         </fieldset>
-        <fieldset id="log">
-        <button type="submit" name="submit" title="Pulsante per inviare i dati inseriti" aria-label="Pulsante per inviare i dati inseriti">LOGIN</button></fieldset>
     </form>
 </div>
 <div id="footer" title="footer" aria-label="footer">

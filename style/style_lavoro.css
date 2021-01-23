@@ -611,6 +611,7 @@ div#login_main form.book button{
 }
 fieldset#log{
   border:none;
+	padding-top: 3em;
 }
 form.book button:hover,input[type=reset]:hover {
   background-color: #1B4188;
@@ -779,6 +780,40 @@ input[type="date"]{
 	order: 1;
 }
 
+/*CSS PER ADMIN*/
+.admin li{
+		list-style-type: none;
+}
+
+.admin textarea[name="descrizione"]{
+	resize: vertical;
+	min-height:15em;
+	max-height: 25em;
+}
+
+#prenotazione input{
+	margin-bottom: 0.5em;
+}
+.login{
+	padding: 5em;
+}
+
+.login_admin{
+	justify-content: center;
+	padding: 0.7em;
+}
+.login_admin .field {
+	max-width: 10em;
+}
+
+.login_admin .tag{
+	flex-grow: 0;
+	min-width: 6em;
+}
+
+.login_admin .tag label{
+	float: right;
+}
 
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
@@ -817,8 +852,9 @@ img#logo{
 }
 
 /*MENU*/
+
+
 #menu ul li {
-	max-width: 20%;
 	padding: 0.8em 0em;
 	text-align: center;
 }
@@ -829,6 +865,11 @@ img#logo{
 img.imgDot{
     width: 10%;
 }
+	
+#menu ul li.adminmenu{
+	min-width: 100%;
+}
+	
 .main{
 	padding: 1.2em; /*troppo stretto altrimenti, perfetto per il form che non sgrana*/
 }
@@ -1017,4 +1058,24 @@ p.access_denied{
 	.suggerimento{
 		font-size: 0.7em;
 	}
+	
+.login{
+	padding: 2em 0em 0em;
+}
+
+.login_admin{
+	width: auto;
+}
+.login_admin .field {
+}
+
+.login_admin .tag{
+}
+
+.login_admin .tag label{
+	float: none;
+}
+
 }/*FINE CSS MOBILE*/
+
+
