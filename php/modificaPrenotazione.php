@@ -21,8 +21,8 @@
 		if(isset($_POST['checkout'])){
 			$checkout=$_POST['checkout'];
 		}
-		if(isset($_POST['descrizione'])){
-			$richieste=$_POST['descrizione'];
+		if(isset($_POST['richieste'])){
+			$richieste=$_POST['richieste'];
 		}
 		
 		$connessione = new connection();

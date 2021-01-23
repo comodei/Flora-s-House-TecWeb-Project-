@@ -22,8 +22,8 @@
                 $ulAttivita.='<li><form class="book" action="../php/modificaAttivita.php" method="post" title="Form per gestire le attivita" aria-label="Form per gestire le attivita"> <fieldset class="field_prenotaz">';
                 
                 //codice
-                /*$ulAttivita.='<div class="row"><div class="col-25"><label for="codice">Codice:</label></div><div class="col-75">';
-                $ulAttivita.='<input type="text" id="codice" name="codice" value="'.$attivita['Codice'].'"/></br></div></div>';*/
+                //$ulAttivita.='<div class="row"><div class="col-25"><label for="codice">Codice:</label></div><div class="col-75">';
+				$ulAttivita.='<input type="text" name="codice"  id="codice" style="display:none;" value="'.$attivita['Codice'].'"/>';
                 //titolo
                 $ulAttivita.='<div class="row"><div class="col-25"><label for="titolo">Titolo:</label></div><div class="col-75">';
                 $ulAttivita.='<input type="text" id="titolo" name="titolo" value="'.$attivita['Titolo'].'"/></br></div></div>';
