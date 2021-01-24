@@ -863,6 +863,9 @@ input[type="date"], #checkin, #checkout {
 #additionalInfo{
 	margin-bottom: 1em;
 }
+a#link_to_login:visited{
+  color:#E6DAC0;
+}
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
