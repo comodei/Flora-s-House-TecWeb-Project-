@@ -164,7 +164,4 @@ function jsAttivo(){
 		element.setAttribute("href", "../style/script_style.css");
 		document.getElementsByTagName("head")[0].appendChild(element);
 	}
-	if (window.matchMedia("only screen and (max-width: 640px)").matches){
-		document.getElementById("galleriaAnteprime").style.display = 'none';
-	}
 }

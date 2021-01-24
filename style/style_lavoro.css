@@ -378,9 +378,7 @@ p.access_denied{
 }
 
 /* SLIDESHOW */
-#torna{
-  visibility: hidden;
-}
+
 #torna1{
   visibility: hidden;
 }
@@ -943,13 +941,14 @@ ul .nomeCitta{
 #torna1{
 	visibility: visible;
 	font-size: 1.2em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+	padding: 0em 0.5em;
 	border:1px solid #235B51;
 	border-radius: 10px;
 	text-decoration: none;
 	background-color: #235B51;
 	color:white;
+	margin-left: 1em;
+	text-align: center;
 }
 /*modificato 10/01*/
 .slideshow_wrapper{
@@ -981,7 +980,6 @@ div.main .slideshow-container{
 
 #mainGalleria{
 	padding: 0em;
-	background-color: rgba(2,21,19,1.00);
 	
 }
 
@@ -990,7 +988,6 @@ div.main .slideshow-container{
 }
 
 div.main .galleria{
-	background-color: rgba(2,21,19,1.00);
 	margin: 0em;
 	width: 100%;
 	padding: 1em 0em 2em;
