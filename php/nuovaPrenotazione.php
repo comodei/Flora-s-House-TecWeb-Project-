@@ -81,7 +81,6 @@ if(isset($_POST['submit'])){
 			$messaggioPerForm.='<li>Per effettuare una prenotazione devi avere almeno 14 anni  </li>';
 		}
 		if($prenotazione->getCheckin() > $prenotazione->getCheckout()){
-		
 			$messaggioPerForm.='<li>La data di check in non può essere dopo la data di check out</li>';
 		}
 		
