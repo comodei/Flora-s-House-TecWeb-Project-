@@ -35,3 +35,7 @@ div.main .contenitoreAnteprime{
 div.main .slideshow-container::after{
 	display: block;
 }
+
+#imgnoscript{
+	display: none;
+}

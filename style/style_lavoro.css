@@ -317,11 +317,14 @@ ul .nomeCitta{
 
 #periodoApertura{
 	grid-area: 2 / 1 / span 1 / span 3;
-	
+	margin: 0em 8em 0em 1em;
+	padding: 1em 0em 1em 2.5em;	
+}
+
+.info{
   	border: 4px solid #3A7F73;
   	border-radius: 10px;
-	margin-right: 8em;
-	padding: 1em 0em 1em 2.5em;
+	
 }
 
 #cittaVicine{
@@ -417,6 +420,13 @@ div.main .mySlides img {
 	position: relative;
     left: 0;
     top: 0;
+    width: 100%;
+    height: 100%;
+	object-fit: cover;
+}
+
+#imgnoscript{
+	
     width: 100%;
     height: 100%;
 	object-fit: cover;
@@ -839,6 +849,16 @@ input[type="date"], #checkin, #checkout {
 	display:none;
 	
 }
+
+/*CSS VARIO*/
+#infoHome{
+	float: right;
+	padding: 1em 2em 0em;
+	margin: 0em 0em 1em 2em;
+}
+#infoHome ul li{
+	margin-bottom: 0.5em;
+}
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
@@ -1005,10 +1025,6 @@ div.main .anteprima{
 	display: block;
 }
 
-#periodoApertura{
-	margin: 1em 0em;
-	padding-left: 1em;
-}
 
 #maps{
 	margin: 0em;
