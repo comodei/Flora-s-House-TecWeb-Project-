@@ -21,11 +21,12 @@ if(isset($_POST['submit'])){
 		$connessione = new connection();
 		if($connessione->isConnected()){
 			$result_cliente = $cliente->inserisciCliente($connessione);
-			$result_prenotazione = $prenotazione->inserisciPrenotazione($connessione);
-			if($result_cliente && $result_prenotazione){
-				$messaggio.= '<div class="conferma"><p>Prenotazione completata</p></div>';
-			} else $messaggio.= '<div class="errori"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
-			
+			if($result_cliente){
+				$result_prenotazione = $prenotazione->inserisciPrenotazione($connessione);
+				if($result_prenotazione){
+					$messaggio.= '<div class="conferma"><p>Prenotazione completata</p></div>';
+				} else $messaggio.= '<div class="errori"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';
+			}else $messaggio.= '<div class="errori"><p>Errore nell\' inserimento della prenotazione. Riprovare</p></div>';	
 		}
 	
 		$paginaHTML = str_replace('<messaggi/>', $messaggio, $paginaHTML);

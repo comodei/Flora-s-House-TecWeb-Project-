@@ -37,14 +37,14 @@ class cliente{
                 $this->carta,\"$this->data_nascita\")";
             
             $queryResult = mysqli_query($db->getConnection(),$query);
-            if(mysqli_affected_rows($db->getConnection())>0){
+            if(mysqli_affected_rows($db->getConnection())==1){
                 return true;
             }
             else{
                 return false;
             }
         } else { 
-			if(mysqli_affected_rows($db->getConnection())==1) {
+			if(mysqli_affected_rows($db->getConnection())==1){
 			return true;
 			} else return false;
 		} 
