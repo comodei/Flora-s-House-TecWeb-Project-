@@ -20,7 +20,6 @@
 
             foreach($listaPrenotazioni as $prenotazione){
 				$ulPrenotazione.='<li><form class="book" action="../php/modificaPrenotazione.php" method="post" title="Form per gestione prenotazioni" aria-label="Form per gestire le prenotazioni"> <fieldset class="display_admin" > 
-					<label for="codice"> Codice prenotazione: '.$prenotazione['Codice'].'</label>
 					<label for="nomecognome"> Cliente: '.$prenotazione['Nome']." ".$prenotazione['Cognome'].'</label>
 					<input type="text" name="codice"  aria-hidden="true" class="codicihidden" id="codice"  value="'.$prenotazione['Codice'].'"/>
 					<div class="campo_prenotazione" id="chkin-chkout"><div id="campo_chkin" class="campo_chk">
