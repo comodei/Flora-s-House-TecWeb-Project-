@@ -859,6 +859,10 @@ input[type="date"], #checkin, #checkout {
 #infoHome ul li{
 	margin-bottom: 0.5em;
 }
+
+#additionalInfo{
+	margin-bottom: 1em;
+}
 /*SMALLSTYLE MA DENTRO IL CSS PRINCIPALE*/
 @media only screen and (max-width: 640px){
 	/*INIZIO CSS MOBILE*/
@@ -1126,6 +1130,7 @@ p.access_denied{
 	float: none;
 	margin: 0em 0em 0.5em;
 	order: 1;
+	width: 100%;
 }
 
 }/*FINE CSS MOBILE*/
