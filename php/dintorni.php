@@ -14,7 +14,7 @@
                 $dlAttivita.='<dd>';
                 $dlAttivita.='<img src="'. $attivita["Immagine"].'" alt="'. $attivita["AltImmagine"] . '"/>';
                 $dlAttivita.='<p>'. $attivita["Descrizione"] . '</p>';
-                $dlAttivita.='<a href="'. $attivita["Link"] . '" title="Vai alla pagina per maggiori informazioni sull\'attività" 
+                $dlAttivita.='<p>(LINK ESTERNO)</p><a href="'. $attivita["Link"] . '" title="Vai alla pagina per maggiori informazioni sull\'attività" 
                 aria-label="Vai alla pagina per maggiori informazioni sull\'attività">Maggiori informazioni qui</a>';
                 $dlAttivita.='</dd>';
             }
