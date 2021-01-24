@@ -61,7 +61,7 @@
         }
 		
 		 public function getListPrenotazioni(){
-            $querySelect = "SELECT * FROM prenotazione ORDER BY DataCheckIn ASC";
+            $querySelect = "SELECT Nome,Cognome,Codice,DataCheckIn,DataCheckOut,Richieste FROM prenotazione,cliente WHERE cliente.CodiceFiscale=prenotazione.CodiceFiscale ORDER BY DataCheckIn ASC";
             $queryResult = mysqli_query($this->connection, $querySelect);
 
             if(mysqli_num_rows($queryResult)!=0){
@@ -69,6 +69,8 @@
                 $listPrenotazioni = array();
                 while($row = mysqli_fetch_assoc($queryResult)){
                     $prenotazione = array(
+						"Nome" => $row['Nome'],
+						"Cognome" => $row['Cognome'],
 					    "Codice" => $row['Codice'],
                         "DataCheckIn" => $row['DataCheckIn'],
                         "DataCheckOut" => $row['DataCheckOut'],
