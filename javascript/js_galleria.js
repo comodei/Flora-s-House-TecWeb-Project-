@@ -1,6 +1,6 @@
 var slideIndex = 1;
 showSlides(slideIndex);
-window.onload = scorriLink(); slide(); hideGalleria();
+window.onload = scorriLink(); slide(); jsAttivo();
 function slide(){
   const links = Array.from(document.getElementsByTagName("span"));
   for (var i=0; i<links.length; i++) {
@@ -154,12 +154,17 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-//SE JAVASCRIPT è DISABILITATO VISUALIZZA LE IMMAGINI UNA DOPO L'ALTRA, ALTRIMENTI VISUALIZZA SOLO LO SLIDESHOW
-/*function hideGalleria() {
+//SE JAVASCRIPT è DISABILITATO VISUALIZZA LE IMMAGINI UNA DOPO L'ALTRA, ALTRIMENTI VISUALIZZA DIVERSAMENTE
+
+function jsAttivo(){
+	if (window.matchMedia("only screen").matches){
+		var element = document.createElement("link");
+		element.setAttribute("rel", "stylesheet");
+		element.setAttribute("type", "text/css");
+		element.setAttribute("href", "../style/script_style.css");
+		document.getElementsByTagName("head")[0].appendChild(element);
+	}
+	if (window.matchMedia("only screen and (max-width: 640px)").matches){
 		document.getElementById("galleriaAnteprime").style.display = 'none';
-		document.getElementById("galleriaSlidePunti").style.display = 'block';
-		document.getElementById("slideshow_home").style.display = 'block';
-		document.getElementsByClassName("mySlides").style.display = 'none';
 	}
 }
-*/

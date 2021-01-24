@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#galleriaSlidePunti{
+	display: block;
+}
+
+#slideshow_home{
+	display: block;
+}
+
+div.main .mySlides{
+	display: none;
+	
+}
+
+
+div.main .mySlides img{
+    position: absolute;
+}
+
+.punti{
+	display: block;
+}
+
+div.main .anteprima img{
+	cursor: pointer;
+}
+
+div.main .contenitoreAnteprime{
+  display: grid;
+}
+
+div.main .slideshow-container::after{
+	display: block;
+}
