@@ -49,9 +49,10 @@ body{
 	-webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.75);
+	
 }
 #header h1{
-    font-size: 5.5em;
+    font-size: 3em;
 	font-family: titleFont,"Arial",cursive,Sans-serif;
 }
 #header h3{
@@ -59,14 +60,19 @@ body{
 	font-family: titleFont,"Arial",cursive,Sans-serif;
     font-size: 1.3em;
 }
+
+
 #logo{
+	margin-top: -0.3em;
+	display: block;
     float:left;
-    width:auto;
-	max-height: 10em;
-	margin-left: 4em;
+	max-height: 7em;;
+	max-width: 100%;
+	margin-left: 8%;
 	object-fit: contain;
 	cursor: pointer;
 }
+
 
 /*BREADCRUMB*/
 #breadcrumb{
