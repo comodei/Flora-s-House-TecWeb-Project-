@@ -28,11 +28,11 @@ class cliente{
    
     public function inserisciCliente(connection $db){
         
-        $query = "SELECT CodiceFiscale FROM Cliente WHERE CodiceFiscale=\"$this->cf\"";
+        $query = "SELECT CodiceFiscale FROM cliente WHERE CodiceFiscale=\"$this->cf\"";
         $queryResult = mysqli_query($db->getConnection(),$query);
 		
         if(mysqli_affected_rows($db->getConnection())==0){
-            $query = "INSERT INTO Cliente(CodiceFiscale,Nome,Cognome,Cellulare,Email,Carta,DataNascita)
+            $query = "INSERT INTO cliente(CodiceFiscale,Nome,Cognome,Cellulare,Email,Carta,DataNascita)
                 VALUES ( \"$this->cf\",\"$this->nome\",\"$this->cognome\",$this->cellulare,\"$this->email\",
                 $this->carta,\"$this->data_nascita\")";
             

@@ -76,7 +76,7 @@
 		      <label for="nascita">* Data di nascita:</label>
         </div>
         <div class="field">
-          <input type="date" name="nascita" id="nascita" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG" required="required"/>
+          <input type="date" name="nascita" id="nascita" min="1900-01-01" max="2100-12-31" title="Inserisci la tua data di nascita nel formato AAAA-MM-GG" required="required"/>
         </div>
         </div>
         <div class="campo_prenotazione obbligatorio" id="insCell">
@@ -113,7 +113,7 @@
 		      <label for="checkin">* Data di check-in:</label>
       </div>
       <div class="field">
-          <input type="date" name="checkin" id="checkin" title="Inserisci la data del checkin nel formato AAAA-MM-GG" required="required"/>
+          <input type="date" name="checkin" id="checkin" min="2020-01-01" max="2100-12-31" title="Inserisci la data del checkin nel formato AAAA-MM-GG" required="required"/>
       </div>
       </div>
       <div class="campo_prenotazione obbligatorio" id="dataChkOut">
@@ -121,7 +121,7 @@
 		      <label for="checkout">* Data di check-out:</label>
       </div>
       <div class="field">
-        <input type="date" name="checkout" id="checkout" title="Inserisci la data del checkout nel formato AAAA-MM-GG" required="required"/>
+        <input type="date" name="checkout" id="checkout" min="2020-01-01" max="2100-12-31" title="Inserisci la data del checkout nel formato AAAA-MM-GG" required="required"/>
       </div>
       </div>	
       <div class="campo_prenotazione" id="richieste">	
