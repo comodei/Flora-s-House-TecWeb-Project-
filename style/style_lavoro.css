@@ -918,6 +918,12 @@ img.imgDot{
 	padding: 1.2em; /*troppo stretto altrimenti, perfetto per il form che non sgrana*/
 }
 /*CONTENUTO GENERALE*/
+	
+#base_content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .main p{
 	font-size: 0.8em;
 }
@@ -969,6 +975,7 @@ ul .nomeCitta{
 	color:white;
 	margin-left: 1em;
 	text-align: center;
+	order: 2;
 }
 /*modificato 10/01*/
 .slideshow_wrapper{
@@ -982,10 +989,8 @@ div.main .slidetext {
 	display: none;
 
 }
-/*togliere descrizione galleria, toglie troppo spazio*/
-	
 body{
-		min-height: 100vh;
+	min-height: 100vh;
 }
 
 div.main .slideshow-container{
@@ -1045,6 +1050,9 @@ div.main .anteprima{
 	padding-left: 0.3em;
 }
 
+	#periodoApertura{
+		margin-right: 1em;
+	}
 /*pagina access denied*/
 h1.titolo_access_denied{
   font-size: 1.2em;
@@ -1112,6 +1120,12 @@ p.access_denied{
 	
 .campo_attivita .field{
 	width: 100%;
+}
+	
+#infoHome{
+	float: none;
+	margin: 0em 0em 0.5em;
+	order: 1;
 }
 
 }/*FINE CSS MOBILE*/
