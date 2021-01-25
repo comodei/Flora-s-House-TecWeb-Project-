@@ -65,24 +65,55 @@
             }
 
             else{
-                $descrizione = str_replace("'", "\'" , $descrizione);
-				$descrizione = str_replace('"','\"' , $descrizione);
-                $query = "UPDATE attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
-                    Link=\"$link\", AltImmagine=\"$altimmagine\", Immagine=\"$immagine\" WHERE Codice=\"$codice\"";
-                $queryResult = mysqli_query($connessione->getConnection(), $query);
-                if(mysqli_affected_rows($connessione->getConnection())>=1){
-                    $connessione->closeConnection();
-                    echo "<div class='mess'>Attivita aggiornata con successo, reindirizzamento in corso</div>";
+				$querable=true;
+				$errorino="<div class='err'><ul>";
+				if($titolo==""){
+					$errorino.="<li>Il campo titolo non può essere vuoto</li>";
+					$querable=false;
+				}
+				if($descrizione==""){
+					$errorino.="<li>Il campo descrizione non può essere vuoto</li>";
+					$querable=false;
+				}
+				if($link==""){
+					$errorino.="<li>Il campo link non può essere vuoto</li>";
+					$querable=false;
+				}
+				if($altimmagine==""){
+					$errorino.="<li>Il campo descrizione immagine non può essere vuoto</li>";
+					$querable=false;
+				}
+				if($immagine==""){
+					$errorino.="<li>Il campo percorso immagine non può essere vuoto</li>";
+					$querable=false;
+				}
+				
+				if ($querable){
+				
+					$descrizione = str_replace("'", "\'" , $descrizione);
+					$descrizione = str_replace('"','\"' , $descrizione);
+					$query = "UPDATE attivita SET Codice=\"$codice\", Titolo=\"$titolo\", Descrizione=\"$descrizione\",
+						Link=\"$link\", AltImmagine=\"$altimmagine\", Immagine=\"$immagine\" WHERE Codice=\"$codice\"";
+					$queryResult = mysqli_query($connessione->getConnection(), $query);
+					if(mysqli_affected_rows($connessione->getConnection())>=1){
+						$connessione->closeConnection();
+						echo "<div class='mess'>Attivita aggiornata con successo, reindirizzamento in corso</div>";
+						header( "refresh:5;url=gestAttivita.php" );
+						exit;
+					}
+					else{
+						 echo "<div class='err'>Errore aggiornamento attivita</div>";
+						header( "refresh:5;url=gestAttivita.php" );
+						exit;
+					}
+				} else{
+					echo $errorino."</ul></div>";
 					header( "refresh:5;url=gestAttivita.php" );
 					exit;
-                }
-                else{
-                     echo "<div class='err'>Errore aggiornamento attivita</div>";
-					header( "refresh:5;url=gestAttivita.php" );
-					exit;
-                }
+					
+				}
 
-            }
+			}
         } else {
 			echo "<div class='mess'> Errore nell'instaurazione della connessione</div>";
 			header( "refresh:5;url=gestAttivita.php" );
